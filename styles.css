@@ -1,5 +1,104 @@
 
 
+:root{
+    /* colours */
+    --black: #111111;
+    --base-red: #C21807;
+    --beige: #F5F0EC;
+}
+/* Basic styling */
+body{
+    /* Var nød til at bruge !important for at ændre farven ------------------------------------ */
+    background-color: var(--beige) !important; 
+    color: var(--black) !important;
+}
 p{
-    max-width: 65ch;
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 40ch;
+    margin: 10%;
+}
+/* Titel på sider */
+h1{
+    font-family: "splash", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-size-adjust: 120%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+a{
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/* Stjernetegn-sider------------------------------------------------------------------------- */
+.sign-image{
+    margin-top: 5%;
+}
+.ord{
+    margin-top: 5%;
+    font-size: 120%;
+    font-weight: 600;
+}
+.years{
+    width: 25ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 120%;
+}
+/* Items boxe--------------------------------- */
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.flex-item {
+  width: 100px;
+}
+.flex-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+/* ----------------------- */
+
+.sections-titel{
+    font-size: 120%;
+    margin-top: 8%;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+/* foother------------------------------------------------------------------------------------ */
+footer{
+    background-color: var(--black);
+    color: var(--beige);
+}
+footer a{
+    color: var(--beige);
+    text-decoration: none;
+    margin: 10%;
+}
+h5{
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 10%;
+}
+
+/* Medium devices (tablets, 768px and up)------------------------------------------------------*/
+@media (min-width: 768px){
+    p{
+        max-width: 65ch;
+    }
+}
+
+/* Large devices (desktops, 992px and up) ------------------------------------------------------*/
+@media (min-width: 992px){
+
 }
