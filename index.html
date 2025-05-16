@@ -492,9 +492,50 @@
                 <!-- find stjernetegn -->
                 <div class="col-12">
                     <h1>Find dit kinesiske stjernetegn</h1>
-                    <p>Indtast dit fødselsår og find dit kinesiske stjernetegn:</p>
-                    <input type="date" name="" id="">
-                    <input type="submit">Find dit kinesiske stjernetegn
+                    <form>
+                        <p>Indtast dit fødselsår</p>
+                        <select name="" id="day">
+                        </select>
+                        <script>
+                        var startDay = 1;
+                        var endDay = 31;
+                        var optionsDay = "";
+                        for (var d = startDay; d <= endDay; d++) {
+                            optionsDay += "<option>" + d + "</option>";
+                        }
+                        document.getElementById("day").innerHTML = optionsDay;
+                        </script>
+                        <select name="" id="month">
+                            <option value="1">Januar</option>
+                            <option value="2">Februar</option>
+                            <option value="3">Marts</option>
+                            <option value="4">April</option>
+                            <option value="5">Maj</option>
+                            <option value="6">Juni</option>
+                            <option value="7">Juli</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">Oktober</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select name="" id="year"> </select>
+                            <script>
+                        var startYear = 1900;
+                        var endYear = new Date().getFullYear();
+                        //var endYear = 2099;
+                        var optionsYear = "";
+                        for (var y = endYear; y >= startYear; y--) {
+                            optionsYear += "<option>" + y + "</option>";
+                        }
+                        document.getElementById("year").innerHTML = optionsYear;
+                        </script>
+                    </form>
+                    
+                        <button type="button" onclick="scriptButton()">Find dit kinesiske stjernetegn</button>
+                    <p id="answer"></p>
+                    
+                    <input type="reset" value="Reset" onclick="resetSign()"/>
                 </div>
             </div>
             <div class="row">
@@ -565,5 +606,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>
