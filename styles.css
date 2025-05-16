@@ -55,14 +55,10 @@ button{
     border: none !important;
     font-size: 1.5em !important;
 }
-/* Index------------------------------------------------------------------------- */
-.index-stjernetegn-mobil{
-    display: block;
-}
-.index-stjernetegn-desktop{
-    display: none;
-}
 /* Stjernetegn-sider------------------------------------------------------------------------- */
+#pills-rotten a{
+    text-decoration: none;
+}
 .sign-image{
     margin-top: 1em;
 }
@@ -76,6 +72,13 @@ button{
     margin-left: auto;
     margin-right: auto;
     font-size: 120%;
+}
+/* Viser/fjerner navigation mellem mobil og desktop visning------------------------------------------------------------------------- */
+.index-stjernetegn-mobil, .rotte-stjernetegn-mobil{
+    display: block;
+}
+.index-stjernetegn-desktop, .rotte-stjernetegn-desktop{
+    display: none;
 }
 /* Items boxe--------------------------------- */
 .items-container {
@@ -141,11 +144,11 @@ h5{
         max-width: 70ch;
         justify-content: center;
     }
-    .index-stjernetegn-mobil{
+    .index-stjernetegn-mobil, .rotte-stjernetegn-mobil{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
         display: none; 
     }
-    .index-stjernetegn-desktop{
+    .index-stjernetegn-desktop, .rotte-stjernetegn-desktop{
         display: block;
     }
 }
