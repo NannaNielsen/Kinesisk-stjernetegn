@@ -17,7 +17,7 @@ p{
     font-weight: 300;
     font-style: normal;
     max-width: 80%;
-    margin: 10%;
+    margin: auto;
 }
 /* Titel på sider */
 h1{
@@ -41,7 +41,7 @@ h3{
     text-size-adjust: 80%;
     margin-top: 1em;
     margin-bottom: 0.5em;
-    margin-left: 10%;
+    margin: auto;
     font-weight: 600;
 }
 a{
@@ -56,9 +56,6 @@ button{
     font-size: 1.5em !important;
 }
 /* Stjernetegn-sider------------------------------------------------------------------------- */
-#pills-rotten a{
-    text-decoration: none;
-}
 .sign-image{
     margin-top: 1em;
 }
@@ -128,7 +125,6 @@ h5{
 /* Medium devices (tablets, 768px and up)------------------------------------------------------*/
 @media (min-width: 768px){
     p{
-        max-width: 70ch;
         justify-content: center;
     }
     h1{
