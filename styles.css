@@ -16,8 +16,8 @@ p{
     font-family: "roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    max-width: 80%;
-    margin: auto;
+    max-width: 65ch;
+    margin: 0;
 }
 /* Titel på sider */
 h1{
@@ -29,7 +29,6 @@ h1{
     padding-bottom: 0.5em;
 }
 h2{
-    margin-left: 10%;
     font-family: "roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -39,10 +38,8 @@ h3{
     font-weight: 300;
     font-style: normal;
     text-size-adjust: 80%;
-    margin-top: 1em;
+    margin: auto !important;
     margin-bottom: 0.5em;
-    margin: auto;
-    font-weight: 600;
 }
 a{
     font-family: "roboto", sans-serif;
@@ -60,14 +57,10 @@ button{
     margin-top: 1em;
 }
 .ord{
-    margin-top: 1em;
-    font-size: 120%;
     font-weight: 600;
 }
-.years{
-    width: 25ch;
-    margin-left: auto;
-    margin-right: auto;
+.years, .ord{
+    margin: auto;
     font-size: 120%;
 }
 /* Viser/fjerner navigation mellem mobil og desktop visning------------------------------------------------------------------------- */
@@ -98,6 +91,9 @@ button{
 .story-img{
     max-width: 100%;
 }
+.sagn p {
+    max-width: 50ch;
+}
 
 /* foother------------------------------------------------------------------------------------ */
 footer{
@@ -114,12 +110,10 @@ h5{
     font-family: "roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin: 10%;
     padding-top: 1em;
 }
 .stjernetegn-footer{
     justify-content: left;
-    padding: 10;
 }
 
 /* Medium devices (tablets, 768px and up)------------------------------------------------------*/
