@@ -72,10 +72,10 @@ button{
     font-size: 120%;
 }
 /* Viser/fjerner navigation mellem mobil og desktop visning------------------------------------------------------------------------- */
-.index-stjernetegn-mobil, .rotte-stjernetegn-mobil{
+.index-stjernetegn-mobil, .rotte-stjernetegn-mobil, .lykketing-mobil{
     display: block;
 }
-.index-stjernetegn-desktop, .rotte-stjernetegn-desktop{
+.index-stjernetegn-desktop, .rotte-stjernetegn-desktop, .lykketing-desktop{
     display: none;
 }
 /* Items boxe--------------------------------- */
@@ -142,11 +142,11 @@ h5{
         max-width: 70ch;
         justify-content: center;
     }
-    .index-stjernetegn-mobil, .rotte-stjernetegn-mobil{
+    .index-stjernetegn-mobil, .rotte-stjernetegn-mobil, .lykketing-mobil{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
         display: none; 
     }
-    .index-stjernetegn-desktop, .rotte-stjernetegn-desktop{
+    .index-stjernetegn-desktop, .rotte-stjernetegn-desktop, .lykketing-desktop{
         display: block;
     }
 }
