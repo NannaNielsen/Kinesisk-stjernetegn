@@ -19,6 +19,7 @@ p{
     font-style: normal;
     max-width: 65ch;
     margin: 0 auto;
+    padding-top: 0.5em;
 }
 /* Titel på sider */
 h1, h2, h3, h4, h5{
@@ -68,14 +69,13 @@ button{
     font-weight: 600;
 }
 .years, .ord{
-    margin: auto;
-    font-size: 120%;
+    margin: 0 auto;
 }
 /* Viser/fjerner navigation mellem mobil og desktop visning------------------------------------------------------------------------- */
-.index-stjernetegn-mobil, .rotte-stjernetegn-mobil, .lykketing-mobil{
+.index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
     display: block;
 }
-.index-stjernetegn-desktop, .rotte-stjernetegn-desktop, .lykketing-desktop{
+.index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
     display: none;
 }
 /* Items boxe--------------------------------- */
@@ -118,7 +118,7 @@ h5{
     font-family: "roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 .stjernetegn-footer{
     justify-content: left;
@@ -132,9 +132,6 @@ h5{
     h1{
         text-size-adjust: 150%;
     }
-    .years{
-        width: 50ch;
-}
 }
 /* Large devices (desktops, 992px and up) ------------------------------------------------------*/
 @media (min-width: 992px){
@@ -142,11 +139,11 @@ h5{
         max-width: 70ch;
         justify-content: center;
     }
-    .index-stjernetegn-mobil, .rotte-stjernetegn-mobil, .lykketing-mobil{
+    .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
         display: none; 
     }
-    .index-stjernetegn-desktop, .rotte-stjernetegn-desktop, .lykketing-desktop{
+    .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
         display: block;
     }
 }
