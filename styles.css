@@ -9,7 +9,7 @@
 /* Basic styling */
 body{
     /* !important brugt for at kunne overwrite bootstrap ------------------------------------ */
-    background-color: var(--beige) !important; 
+    background-color: var(--beige) !important;
     color: var(--black) !important;
 }
 
@@ -33,7 +33,6 @@ h1{
     text-size-adjust: 120%;
     padding-top: 2em;
     padding-bottom: 0.5em;
-    text-size-adjust: 90%;
 }
 h2{
     font-family: "splash", sans-serif;
@@ -78,7 +77,83 @@ button:hover{
     border: 1px solid var(--black) !important;
     transition: 0.5s;
 }
-/* Index------------------------------------------------------------------------- */
+/* Navbar--------------------------------------------------------------------------------------- */
+.navbaren {
+    background-color: var(--black);
+    padding: 2em;
+    text-align: center;
+}
+.navbaren a{
+    text-decoration: none;
+}
+.navbaren h1 {
+    padding: 0.5em;
+    color: var(--beige);
+}
+.navbaren a:hover{
+    color: var(--base-red);
+}
+.underline {
+    width: 160px;
+    height: 2px;
+    background-color: var(--beige);
+    margin: 5px auto 15px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.nav-links a, .dropdown-btn {
+    color: var(--beige);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: none;
+    border: none;
+    font-size: 1em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--black);
+    opacity: 95%;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    background-color: var(--black);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--base-red);
+    color: var(--beige);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Index-------------------------------------------------------------------------------------- */
 .banner{
     min-width: 100vw;
 }
@@ -96,7 +171,7 @@ button:hover{
 .years, .ord{
     margin: 0 auto;
 }
-/* Viser/fjerner navigation mellem mobil og desktop visning------------------------------------------------------------------------- */
+/* Viser/fjerner navigation mellem mobil og desktop visning----------------------------------- */
 .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
     display: block;
 }
