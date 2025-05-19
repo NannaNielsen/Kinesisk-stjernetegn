@@ -493,7 +493,7 @@
                 <div class="col-12">
                     <h1>Find dit kinesiske stjernetegn</h1>
                     <form>
-                        <p>Indtast dit fødselsår</p>
+                        <p>Indtast din fødselsdag:</p>
                         <select name="" id="day">
                         </select>
                         <script>
@@ -530,12 +530,13 @@
                         }
                         document.getElementById("year").innerHTML = optionsYear;
                         </script>
+                        <br>
+                        <input type="reset" value="Reset" onclick="resetSign()"/>
                     </form>
                     
                         <button type="button" onclick="scriptButton()">Find dit kinesiske stjernetegn</button>
                     <p id="answer"></p>
                     
-                    <input type="reset" value="Reset" onclick="resetSign()"/>
                 </div>
             </div>
             <div class="row">
