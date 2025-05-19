@@ -12,14 +12,20 @@ body{
     background-color: var(--beige) !important; 
     color: var(--black) !important;
 }
+
 p{
     font-family: "roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    max-width: 80%;
-    margin: 10%;
+    max-width: 65ch;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    text-align: left;
 }
 /* Titel på sider */
+h1, h2, h3, h4, h5{
+    text-align: center;
+}
 h1{
     font-family: "splash", sans-serif;
     font-weight: 400;
@@ -27,43 +33,75 @@ h1{
     text-size-adjust: 120%;
     padding-top: 2em;
     padding-bottom: 0.5em;
+    text-size-adjust: 90%;
 }
 h2{
-    margin-left: 10%;
+    font-family: "splash", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 h3{
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     text-size-adjust: 80%;
-    margin-top: 1em;
+    margin: auto !important;
     margin-bottom: 0.5em;
-    margin-left: 10%;
-    font-weight: 600;
 }
 a{
     font-family: "roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 24px;
+}
+ul{
+    padding-left: 0 !important;
+}
+li{
+    list-style-type: none;
 }
 button{
     color: var(--beige) !important;
     background-color: var(--base-red)!important;
-    border: none !important;
-    font-size: 1.5em !important;
+    border: 1px solid var(--base-red) !important;
+    border-radius: 10px !important;
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-size: 24px !important;
+    padding: 0.2em 1.5em;
+    transition: 0.5s;
 }
-
+button:hover{
+    background-color: var(--beige) !important;
+    color: var(--black) !important;
+    border: 1px solid var(--black) !important;
+    transition: 0.5s;
+}
+/* Index------------------------------------------------------------------------- */
+.banner{
+    min-width: 100vw;
+}
+.accordion-item{
+    background-color: var(--beige) !important;
+    border: none !important;
+}
 /* Stjernetegn-sider------------------------------------------------------------------------- */
 .sign-image{
     margin-top: 1em;
 }
 .ord{
-    margin-top: 1em;
-    font-size: 120%;
     font-weight: 600;
 }
-.years{
-    width: 25ch;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 120%;
+.years, .ord{
+    margin: 0 auto;
+}
+/* Viser/fjerner navigation mellem mobil og desktop visning------------------------------------------------------------------------- */
+.index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
+    display: block;
+}
+.index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
+    display: none;
 }
 /* Items boxe--------------------------------- */
 .items-container {
@@ -86,6 +124,9 @@ button{
 .story-img{
     max-width: 100%;
 }
+.sagn p {
+    max-width: 50ch;
+}
 
 /* foother------------------------------------------------------------------------------------ */
 footer{
@@ -102,34 +143,38 @@ h5{
     font-family: "roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin: 10%;
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 .stjernetegn-footer{
     justify-content: left;
-    padding: 10;
 }
 
 /* Medium devices (tablets, 768px and up)------------------------------------------------------*/
 @media (min-width: 768px){
     p{
-        max-width: 70ch;
         justify-content: center;
     }
     h1{
         text-size-adjust: 150%;
     }
-    .years{
-        width: 50ch;
-}
 }
 /* Large devices (desktops, 992px and up) ------------------------------------------------------*/
 @media (min-width: 992px){
+    .containter-fluid{
+        flex-wrap: wrap;
+    }
     p{
         max-width: 70ch;
         justify-content: center;
     }
     h2{
         padding: 0.5em 0em;
+    }
+    .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
+        /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
+        display: none; 
+    }
+    .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
+        display: block;
     }
 }
