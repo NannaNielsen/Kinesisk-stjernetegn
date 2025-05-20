@@ -14,6 +14,7 @@ body{
     color: var(--black) !important;
 }
 img{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -261,6 +262,9 @@ nav{
 }
 .nav-link.active{
     background-color: var(--beige) !important;
+}
+.nav-link.active img{
+    border-bottom: solid 2px var(--black);
 }
 .stjernetegn-bg p{
     text-align: center;
