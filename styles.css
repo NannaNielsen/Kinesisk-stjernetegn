@@ -78,6 +78,11 @@ button:hover{
     color: var(--beige);
     transition: 0.5s;
 }
+select{
+    padding: 0.2em 1.5em;
+    text-align: center;
+    border-radius: 10px;
+}
 /* Navbar mobil--------------------------------------------------------------------------------------- */
 nav{
     background-color: var(--black);
@@ -183,7 +188,23 @@ nav{
 
 /* Index-------------------------------------------------------------------------------------- */
 .banner{
-    min-width: 100vw;
+    background-color: var(--black);
+}
+.banner a{
+    text-decoration: none;
+    color: var(--beige);
+    transition: 0.5s;
+    font-size: 40px;
+}
+.banner a:hover{
+    color: var(--base-red);
+    transition: 0.5s;
+}
+.anchor{
+    display:block;
+    height:169px; /*højde på header*/
+    margin-top:-169px; /*negative højde på header*/
+    visibility:hidden;
 }
 .accordion-item{
     background-color: var(--beige) !important;
@@ -200,7 +221,7 @@ nav{
     transition: 0.5s;
     filter: grayscale(0%);
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills.nav-link.active, .nav-pills .show>.nav-link {
     background-color: var(none);
 }
 .line {
@@ -208,6 +229,16 @@ nav{
     height: 2px;
     background-color: var(--base-red);
     margin: 0 auto 1em;
+}
+#pills-tab{
+    justify-content: center;
+}
+.nav-link.active{
+    background-color: var(--beige) !important;
+}
+.stjernetegn-bg, .sagn-bg{
+    width: 100%;
+    background-color: var(--base-red);
 }
 /* Stjernetegn-sider------------------------------------------------------------------------- */
 .sign-image{
