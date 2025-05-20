@@ -48,6 +48,12 @@ h3{
     margin: auto !important;
     margin-bottom: 0.5em;
 }
+h4{
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 0.5em;
+}
 a{
     font-family: "roboto", sans-serif;
     font-weight: 300;
@@ -266,12 +272,6 @@ footer a{
     color: var(--beige);
     text-decoration: none;
     text-decoration: underline;
-}
-h5{
-    font-family: "roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    padding-top: 0.5em;
 }
 .stjernetegn-footer{
     justify-content: left;
