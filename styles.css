@@ -5,6 +5,7 @@
     --black: #111111;
     --base-red: #C21807;
     --beige: #F5F0EC;
+    --dark-red: #7c0a02;
 }
 /* Basic styling */
 body{
@@ -36,10 +37,10 @@ h1{
     text-size-adjust: 90%;
 }
 h2{
-    font-family: "splash", sans-serif;
+    font-family: "roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-
+    text-size-adjust: 110%;
 }
 h3{
     font-family: "roboto", sans-serif;
@@ -63,8 +64,8 @@ li{
 }
 button{
     color: var(--beige) !important;
-    background-color: var(--base-red)!important;
-    border: 1px solid var(--base-red) !important;
+    background-color: var(--base-red);
+    border: 1px solid var(--base-red) ;
     border-radius: 10px !important;
     font-family: "roboto", sans-serif;
     font-weight: 300;
@@ -73,9 +74,8 @@ button{
     transition: 0.5s;
 }
 button:hover{
-    background-color: var(--beige) !important;
-    color: var(--black) !important;
-    border: 1px solid var(--black) !important;
+    background-color: var(--dark-red) ;
+    color: var(--beige);
     transition: 0.5s;
 }
 /* Navbar mobil--------------------------------------------------------------------------------------- */
@@ -119,7 +119,7 @@ nav{
     color: var(--base-red);
 }
 .underline {
-    width: 160px;
+    width: 400px;
     height: 2px;
     background-color: var(--beige);
     margin: 5px auto 15px;
@@ -188,6 +188,26 @@ nav{
 .accordion-item{
     background-color: var(--beige) !important;
     border: none !important;
+}
+.nav-item button{
+    background-color: none;
+    margin-bottom: 0;
+    filter: grayscale(100%);
+}
+.nav-item button:hover{
+    background-color: var(--beige) !important;
+    border: none;
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(none);
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--base-red);
+    margin: 0 auto 1em;
 }
 /* Stjernetegn-sider------------------------------------------------------------------------- */
 .sign-image{
