@@ -7,9 +7,9 @@
     --beige: #F5F0EC;
     --dark-red: #7c0a02;
 }
-/* Basic styling */
+/* Basic styling------------------------------------------------------------------------------ */
 body{
-    /* !important brugt for at kunne overwrite bootstrap ------------------------------------ */
+    /* !important brugt for at kunne overwrite bootstrap */
     background-color: var(--beige) !important;
     color: var(--black) !important;
 }
@@ -31,10 +31,8 @@ h1{
     font-family: "splash", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 1em 0 0 0;
     text-size-adjust: 120%;
-    padding-top: 2em;
-    padding-bottom: 0.5em;
-    text-size-adjust: 90%;
 }
 h2{
     font-family: "roboto", sans-serif;
@@ -49,6 +47,12 @@ h3{
     text-size-adjust: 80%;
     margin: auto !important;
     margin-bottom: 0.5em;
+}
+h4{
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 0.5em;
 }
 a{
     font-family: "roboto", sans-serif;
@@ -274,9 +278,17 @@ nav{
   height: 80px;
   object-fit: cover;
 }
-/* ----------------------- */
+/* historie side-------------------------------------------------------------------------------- */
 .story-img{
     max-width: 100%;
+}
+.sagn{
+    background-color:white ;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+
 }
 .sagn p {
     max-width: 50ch;
@@ -286,18 +298,11 @@ nav{
 footer{
     background-color: var(--black);
     color: var(--beige);
-    margin-top: 2em;
 }
 footer a{
     color: var(--beige);
     text-decoration: none;
     text-decoration: underline;
-}
-h5{
-    font-family: "roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    padding-top: 0.5em;
 }
 .stjernetegn-footer{
     justify-content: left;
@@ -314,6 +319,13 @@ h5{
 }
 /* Large devices (desktops, 992px and up) ------------------------------------------------------*/
 @media (min-width: 992px){
+    .bamboo-baggrund{
+        background-image: url(img/bamboo-2.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        margin: 0;
+        padding: 0;
+    }
     .containter-fluid{
         flex-wrap: wrap;
     }
@@ -330,5 +342,15 @@ h5{
     }
     .navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
         display: block;
+    }
+}
+/* Large devices (desktops, 992px and up) ------------------------------------------------------*/
+@media (min-width: 2500px){
+    .bamboo-baggrund-big{
+        background-image: url(img/bamboo-2.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        margin: 0;
+        padding: 0;
     }
 }
