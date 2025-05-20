@@ -13,7 +13,10 @@ body{
     background-color: var(--beige) !important;
     color: var(--black) !important;
 }
-
+img{
+    display: flex;
+    justify-content: center;
+}
 p{
     font-family: "roboto", sans-serif;
     font-weight: 300;
@@ -26,6 +29,7 @@ p{
 /* Titel på sider */
 h1, h2, h3, h4, h5{
     text-align: center;
+    margin-bottom: 0 !important;
 }
 h1{
     font-family: "splash", sans-serif;
@@ -49,6 +53,11 @@ h3{
     text-size-adjust: 80%;
     margin: auto !important;
     margin-bottom: 0.5em;
+}
+h4{
+    font-family: "roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 a{
     font-family: "roboto", sans-serif;
@@ -82,6 +91,15 @@ select{
     padding: 0.2em 1.5em;
     text-align: center;
     border-radius: 10px;
+    border: solid 1px var(--dark-red);
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.form-options{
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 /* Navbar mobil--------------------------------------------------------------------------------------- */
 nav{
@@ -210,6 +228,13 @@ nav{
     background-color: var(--beige) !important;
     border: none !important;
 }
+.accordion-button.collapsed{
+    color: var(--black) !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--base-red) !important;
+    
+}
 .nav-item button{
     background-color: none;
     margin-bottom: 0;
@@ -236,9 +261,13 @@ nav{
 .nav-link.active{
     background-color: var(--beige) !important;
 }
+.stjernetegn-bg p{
+    text-align: center;
+}
 .stjernetegn-bg, .sagn-bg{
     width: 100%;
     background-color: var(--base-red);
+    color: var(--beige);
 }
 /* Stjernetegn-sider------------------------------------------------------------------------- */
 .sign-image{
