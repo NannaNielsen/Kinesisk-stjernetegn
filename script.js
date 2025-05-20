@@ -220,7 +220,7 @@ function scriptButton() {
         if (birthday >= signs[yearIndex][0]) {
             birthdaySign = signs[yearIndex][1];
             birthdayElement = signs[yearIndex][2];
-             birthdayImage = signs[yearIndex][3];
+            birthdayImage = signs[yearIndex][3];
             break;
         }
     }
