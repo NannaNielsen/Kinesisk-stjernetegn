@@ -77,14 +77,26 @@ button:hover{
     border: 1px solid var(--black) !important;
     transition: 0.5s;
 }
-/* Navbar--------------------------------------------------------------------------------------- */
+/* Navbar mobil--------------------------------------------------------------------------------------- */
+nav{
+    background-color: var(--base-red);
+}
+.navbar-toggler-icon{
+    color: white !important;
+}
+.dropdown-menu.show a{
+    font-size: 16px;
+}
+/* Navbar desktop--------------------------------------------------------------------------------------- */
 .navbaren {
     background-color: var(--black);
-    padding: 2em;
+    padding: 1em;
     text-align: center;
+    transition: 0.5s;
 }
 .navbaren a{
     text-decoration: none;
+    transition: 0.5s;
 }
 .navbaren h1 {
     padding: 0.5em;
@@ -122,7 +134,7 @@ button:hover{
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content, .dropdown-menu.show {
     display: none;
     position: absolute;
     background-color: var(--black);
@@ -134,7 +146,7 @@ button:hover{
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
 }
 
-.dropdown-content a {
+.dropdown-content a, .dropdown-menu.show a {
     color: white;
     background-color: var(--black);
     border: none;
@@ -144,13 +156,16 @@ button:hover{
     cursor: pointer;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-menu.show a:hover {
     background-color: var(--base-red);
     color: var(--beige);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.dropdown-menu.show a{
+    padding: 0;
 }
 
 /* Index-------------------------------------------------------------------------------------- */
@@ -172,10 +187,10 @@ button:hover{
     margin: 0 auto;
 }
 /* Viser/fjerner navigation mellem mobil og desktop visning----------------------------------- */
-.index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
+.navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
     display: block;
 }
-.index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
+.navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
     display: none;
 }
 /* Items boxe--------------------------------- */
@@ -245,11 +260,11 @@ h5{
     h2{
         padding: 0.5em 0em;
     }
-    .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
+    .navbar.sticky-top.navbar-mobil, .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
         display: none; 
     }
-    .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
+    .navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
         display: block;
     }
 }

@@ -209,22 +209,24 @@ function scriptButton() {
     ["19020208", "tigeren", "water"],
     ["19010219", "oksen", "metal"],
     ["19000131", "rotten", "metal"],
-    ["19000000", "grisen", "earth"]];
+    ["19000000", "grisen", "earth", "test"]];
 
     // Find stjernetegn
     var birthdaySign = "";
     var birthdayElement = "";
+    var birthdayImage= "";
 
     for (var yearIndex = 0; yearIndex < signs.length; yearIndex++) {
         if (birthday >= signs[yearIndex][0]) {
             birthdaySign = signs[yearIndex][1];
             birthdayElement = signs[yearIndex][2];
+             birthdayImage = signs[yearIndex][3];
             break;
         }
     }
 
     // Opdater resultat på html-siden
-    var answer = "Dit kinesiske stjernetegn er " + birthdaySign + " og dit element er " + birthdayElement;
+    var answer = "Dit kinesiske stjernetegn er " + birthdaySign + " og dit element er " + birthdayElement + "dette er dit billede" + birthdayImage;
     document.getElementById("answer").innerHTML = answer;
 }
 function resetSign() {
