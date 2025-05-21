@@ -388,7 +388,6 @@ footer a{
     }
     .navbaren.sticky-top.navbar-desktop{
         z-index: 1021;
-        max-height: 160px;
     }
     .navbar.sticky-top.navbar-mobil, .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
@@ -399,7 +398,10 @@ footer a{
     }
     .stjernetegn-bg{
         min-height: 400px;
+        display: flex;
+        align-items: center;
     }
+
 }
 /* Large devices (desktops, 992px and up) ------------------------------------------------------*/
 @media (min-width: 2500px){
