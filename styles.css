@@ -166,7 +166,6 @@ nav{
     border: none;
     font-size: 1em;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -205,7 +204,11 @@ nav{
 .dropdown-menu.show a{
     padding: 5px;
 }
-
+.nav-active a{
+    text-decoration: underline !important;
+    text-decoration-color: var(--beige);
+    text-decoration-thickness: 2px !important;
+}
 /* Index-------------------------------------------------------------------------------------- */
 .banner{
     background-color: var(--black);
