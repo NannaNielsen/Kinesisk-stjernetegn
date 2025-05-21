@@ -76,7 +76,7 @@ li{
 button{
     color: var(--beige) !important;
     background-color: var(--base-red);
-    border: 1px solid var(--base-red) ;
+    border: 1px solid var(--beige) ;
     border-radius: 10px !important;
     font-family: "roboto", sans-serif;
     font-weight: 300;
@@ -90,6 +90,7 @@ button:hover{
     transition: 0.5s;
 }
 select{
+    margin: 0.5em 0 !important;
     padding: 0.2em 1.5em;
     text-align: center;
     border-radius: 10px;
@@ -335,13 +336,26 @@ footer{
     background-color: var(--black);
     color: var(--beige);
 }
+footer h5 {
+    padding: 0.5em 0;
+    text-align: left;
+}
+footer p{
+    margin: 0;
+    padding: 0 0 0.5em;
+}
 footer a{
     color: var(--beige);
     text-decoration: none;
     text-decoration: underline;
+    font-size: 16px;
 }
 .stjernetegn-footer{
     justify-content: left;
+}
+.copyright{
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
 }
 
 /* Medium devices (tablets, 768px and up)------------------------------------------------------*/
@@ -378,6 +392,9 @@ footer a{
     }
     .navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
         display: block;
+    }
+    .stjernetegn-bg{
+        min-height: 400px;
     }
 }
 /* Large devices (desktops, 992px and up) ------------------------------------------------------*/
