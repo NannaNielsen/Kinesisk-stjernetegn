@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>De Kinesiske Stjernetegn</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Astro</title>
+
+    <!-- Favicon: -->
+    <link rel="icon" type="image" href="img/logo.png">
+
+    <!-- Meta beskrivelse: -->
+    <meta name="description" content="K-Astro er en ressource til at lære og forstå de kinesiske stjernetegn. Find dit og andres kinesiske stjernetegn og lær om historien bag dem.">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
@@ -18,266 +24,531 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     
 </head>
-    <body>
-        <!-- Navbar mobil -->
-        <nav class="navbar navbar-dark sticky-top navbar-mobil">
-            <div class="container-fluid">
-                <a href="index.html"><h1>K-astro</h1></a>
-                <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            STJERNETEGN
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
-                            <li><a class="dropdown-item" href="okse.html">Okse</a></li>
-                            <li><a class="dropdown-item" href="tiger.html">Tiger</a></li>
-                            <li><a class="dropdown-item" href="kanin.html">Kanin</a></li>
-                            <li><a class="dropdown-item" href="drage.html">Drage</a></li>
-                            <li><a class="dropdown-item" href="slange.html">Slange</a></li>
-                            <li><a class="dropdown-item" href="hest.html">Hest</a></li>
-                            <li><a class="dropdown-item" href="ged.html">Ged</a></li>
-                            <li><a class="dropdown-item" href="abe.html">Abe</a></li>
-                            <li><a class="dropdown-item" href="hane.html">Hane</a></li>
-                            <li><a class="dropdown-item" href="hund.html">Hund</a></li>
-                            <li><a class="dropdown-item" href="gris.html">Gris</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historie.html">HISTORIE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="om-os.html">OM OS</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar custom desktop -->
-        <div class="navbaren sticky-top navbar-desktop">
-            <a href="index.html"><h1>K-Astro</h1></a>
-            <div class="underline"></div>
-            <div class="nav-links">
-              <div class="dropdown">
-                <a class="dropdown-btn">STJERNETEGN ▼</a>
-                <div class="dropdown-content">
-                  <ul>
-                      <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
-                      <li><a class="dropdown-item" href="okse.html">Okse</a></li>
-                      <li><a class="dropdown-item" href="tiger.html">Tiger</a></li>
-                      <li><a class="dropdown-item" href="kanin.html">Kanin</a></li>
-                      <li><a class="dropdown-item" href="drage.html">Drage</a></li>
-                      <li><a class="dropdown-item" href="slange.html">Slange</a></li>
-                      <li><a class="dropdown-item" href="hest.html">Hest</a></li>
-                      <li><a class="dropdown-item" href="ged.html">Ged</a></li>
-                      <li><a class="dropdown-item" href="abe.html">Abe</a></li>
-                      <li><a class="dropdown-item" href="hane.html">Hane</a></li>
-                      <li><a class="dropdown-item" href="hund.html">Hund</a></li>
-                      <li><a class="dropdown-item" href="gris.html">Gris</a></li>
+<body>
+    <!-- Navbar mobil -->
+    <nav class="navbar navbar-dark sticky-top navbar-mobil">
+        <div class="container-fluid">
+            <a href="index.html"><h1>K-astro</h1></a>
+            <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        STJERNETEGN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
+                        <li><a class="dropdown-item" href="okse.html">Okse</a></li>
+                        <li><a class="dropdown-item" href="tiger.html">Tiger</a></li>
+                        <li><a class="dropdown-item" href="kanin.html">Kanin</a></li>
+                        <li><a class="dropdown-item" href="drage.html">Drage</a></li>
+                        <li><a class="dropdown-item" href="slange.html">Slange</a></li>
+                        <li><a class="dropdown-item" href="hest.html">Hest</a></li>
+                        <li><a class="dropdown-item" href="ged.html">Ged</a></li>
+                        <li><a class="dropdown-item" href="abe.html">Abe</a></li>
+                        <li><a class="dropdown-item" href="hane.html">Hane</a></li>
+                        <li><a class="dropdown-item" href="hund.html">Hund</a></li>
+                        <li><a class="dropdown-item" href="gris.html">Gris</a></li>
                     </ul>
-                </div>
-              </div>
-              <a href="historie.html">HISTORIE</a>
-              <a href="om-os.html">OM OS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historie.html">HISTORIE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="om-os.html">OM OS</a>
+                </li>
+            </ul>
             </div>
-          </div>
-        <div class="banner text-center">
-            <img src="img/landingpage-img.png" media="(min-width:768px)" class="img-fluid">
-                <source srcset="https://placehold.co/400x600" media="(max-width:767px)">
-            </source>
-            <a href="index.html#index-content">▼</a>
         </div>
-        <span class="anchor" id="index-content"></span>
-        <div class="container stjernetegn">
-            <div class="row ">
-                <div class="col-12 ">
-                    <h2 class="text-center">De kinesiske stjernetegn</h2>
-                    <!-- Valg af stjernetegn mobil -->
-                    <div class="index-stjernetegn-mobil">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Rotten
-                                </button>
-                            </p>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <h3 class="text-center">Forstand • Ambition • Charme</h3>
-                                    <p>Rotten er det første kinesiske stjernetegn.</p>
-                                    <p>Personer født i rottens år er som regel humørfyldte, sociale og stædige personer, som trives ved at være en del af en gruppe. Dette stjernetegn værdsætter tryghed i forskellige aspekter af deres liv, hvilket påvirker deres valg af karriere og kærlighed.</p>
-                                    <a class="btn btn-primary" href="rotte.html" role="button">Læs mere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Oksen
+    </nav>
+    <!-- Navbar custom desktop -->
+    <div class="navbaren sticky-top navbar-desktop">
+        <a href="index.html"><h1>K-Astro</h1></a>
+        <div class="underline"></div>
+        <div class="nav-links">
+            <div class="dropdown">
+            <a class="dropdown-btn">STJERNETEGN ▼</a>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
+                    <li><a class="dropdown-item" href="okse.html">Okse</a></li>
+                    <li><a class="dropdown-item" href="tiger.html">Tiger</a></li>
+                    <li><a class="dropdown-item" href="kanin.html">Kanin</a></li>
+                    <li><a class="dropdown-item" href="drage.html">Drage</a></li>
+                    <li><a class="dropdown-item" href="slange.html">Slange</a></li>
+                    <li><a class="dropdown-item" href="hest.html">Hest</a></li>
+                    <li><a class="dropdown-item" href="ged.html">Ged</a></li>
+                    <li><a class="dropdown-item" href="abe.html">Abe</a></li>
+                    <li><a class="dropdown-item" href="hane.html">Hane</a></li>
+                    <li><a class="dropdown-item" href="hund.html">Hund</a></li>
+                    <li><a class="dropdown-item" href="gris.html">Gris</a></li>
+                </ul>
+            </div>
+            </div>
+            <a href="historie.html">HISTORIE</a>
+            <a href="om-os.html">OM OS</a>
+        </div>
+        </div>
+    <div class="banner text-center">
+        <img src="img/landingpage-img.png" media="(min-width:768px)" class="img-fluid">
+            <source srcset="https://placehold.co/400x600" media="(max-width:767px)">
+        </source>
+        <a href="index.html#index-content">▼</a>
+    </div>
+    <span class="anchor" id="index-content"></span>
+    <div class="container stjernetegn">
+        <div class="row ">
+            <div class="col-12 ">
+                <h2 class="text-center">De kinesiske stjernetegn</h2>
+                <!-- Valg af stjernetegn mobil -->
+                <div class="index-stjernetegn-mobil">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Rotten
                             </button>
-                            </p>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        </p>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <h3 class="text-center">Beskeden • Tillidsfuld • Tålmodig</h3>
-                                <p>Oksen er det andet kinesiske stjernetegn.</p>
-                                <p>PPersoner født i oksens år er ansvarlige, jordnære og hårdtarbejdende. De er ofte stille og pålidelige, men kan også virke stædige og temperamentsfulde, især hvis deres grænser overskrides.</p>
-                                <a class="btn btn-primary" href="okse.html" role="button">Læs mere</a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Tigeren
-                            </button>
-                            </p>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body"><h3 class="text-center">Selvsikker • Uafhængig • Ærlig</h3>
-                                <p>Tigeren er det tredje kinesiske stjernetegn.</p>
-                                <p>Personer født i tigerens år er karismatiske, viljestærke og modige individer, der udstråler positiv energi og elsker udfordringer. De har store ambitioner og er ærlige og direkte i deres kommunikation.</p>
-                                <a class="btn btn-primary" href="tiger.html" role="button">Læs mere</a>
-                            </div>
+                                <h3 class="text-center">Forstand • Ambition • Charme</h3>
+                                <p>Rotten er det første kinesiske stjernetegn.</p>
+                                <p>Personer født i rottens år er som regel humørfyldte, sociale og stædige personer, som trives ved at være en del af en gruppe. Dette stjernetegn værdsætter tryghed i forskellige aspekter af deres liv, hvilket påvirker deres valg af karriere og kærlighed.</p>
+                                <a class="btn btn-primary" href="rotte.html" role="button">Læs mere</a>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                Kaninen
-                            </button>
-                            </p>
-                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body"><h3 class="text-center">Optimistisk • Opfindsom • Følsom</h3>
-                                <p>Kaninen er det fjerde kinesiske stjernetegn.</p>
-                                <p>Personer født i kaninens år har fokus på harmoni og balance, hvoraf de søger fred og undgår konflikt så vidt muligt. De er venlige, intelligente og tilpasningsdygtige, men også følsomme og forsigtige.</p>
-                                <a class="btn btn-primary" href="kanin.html" role="button">Læs mere</a>
-                            </div>
-                            </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Oksen
+                        </button>
+                        </p>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h3 class="text-center">Beskeden • Tillidsfuld • Tålmodig</h3>
+                            <p>Oksen er det andet kinesiske stjernetegn.</p>
+                            <p>PPersoner født i oksens år er ansvarlige, jordnære og hårdtarbejdende. De er ofte stille og pålidelige, men kan også virke stædige og temperamentsfulde, især hvis deres grænser overskrides.</p>
+                            <a class="btn btn-primary" href="okse.html" role="button">Læs mere</a>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                Dragen
-                            </button>
-                            </p>
-                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <h3 class="text-center">Idealistisk • Selvsikker • Ambitiøs</h3>
-                                <p>Dragen er det femte kinesiske stjernetegn.</p>
-                                <p>Personer født i dragens år er selvsikre, generøse og ambitiøse lederskikkelser med en stærk personlighed og eventyrlyst. De søger ægte forbindelser og værdsætter ærlighed højt, men kan virke dominerende og impulsive.</p>
-                            </div>
-                            </div>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                Slangen
-                            </button>
-                            </p>
-                            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <h3 class="text-center">Rolig • Kløgtig • Observant</h3>
-                                <p>Slangen er det sjette kinesiske stjernetegn.</p>
-                                <p>Personer født i slangens år er rolige, kløgtige og observerende personer, som ofte skjuler deres sårbarhed bag en behersket og tillidsvækkende ydre. De er intuitive, kunstneriske og gode under pres, men har behov for alenetid og kan virke følelsesmæssigt distancerede.</p>
-                                <a class="btn btn-primary" href="slange.html" role="button">Læs mere</a>
-                            </div>
-                            </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Tigeren
+                        </button>
+                        </p>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><h3 class="text-center">Selvsikker • Uafhængig • Ærlig</h3>
+                            <p>Tigeren er det tredje kinesiske stjernetegn.</p>
+                            <p>Personer født i tigerens år er karismatiske, viljestærke og modige individer, der udstråler positiv energi og elsker udfordringer. De har store ambitioner og er ærlige og direkte i deres kommunikation.</p>
+                            <a class="btn btn-primary" href="tiger.html" role="button">Læs mere</a>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                Hesten
-                            </button>
-                            </p>
-                            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body"><h3 class="text-center">Ansvarlig • Viljestærk • Omsorgsfuld</h3>
-                                <p>Hesten er det syvende kinesiske stjernetegn.</p>
-                                <p>Personer født i hestens år er selvsikre, udadvendte og viljestærke ledere, som elsker udfordringer og er drevet af passion og moral. De er ærlige og omsorgsfulde, men kan være utålmodige og have svært ved at fastholde interessen, når motivationen daler.</p>
-                                <a class="btn btn-primary" href="hest.html" role="button">Læs mere</a>
-                            </div>
-                            </div>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                Geden
-                            </button>
-                            </p>
-                            <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <h3 class="text-center">Empatisk • Trofast • Entusiastisk</h3>
-                                <p>Geden er det ottende kinesiske stjernetegn.</p>
-                                <p>Personer født i gedens år er ærlige, venlige og empatiske, oftest set som den mest uselviske person i deres vennekreds. De er medfølende og loyale, men kan blive hårdt såret af andres handlinger eller deres egen fiasko.</p>
-                                <a class="btn btn-primary" href="ged.html" role="button">Læs mere</a>
-                            </div>
-                            </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Kaninen
+                        </button>
+                        </p>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><h3 class="text-center">Optimistisk • Opfindsom • Følsom</h3>
+                            <p>Kaninen er det fjerde kinesiske stjernetegn.</p>
+                            <p>Personer født i kaninens år har fokus på harmoni og balance, hvoraf de søger fred og undgår konflikt så vidt muligt. De er venlige, intelligente og tilpasningsdygtige, men også følsomme og forsigtige.</p>
+                            <a class="btn btn-primary" href="kanin.html" role="button">Læs mere</a>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                                Aben
-                            </button>
-                            </p>
-                            <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <h3 class="text-center">Observante • Innovative • Aktive</h3>
-                                <p>Aben er det niende kinesiske stjernetegn.</p>
-                                <p>Personer født i abens år er intelligente, innovative og kreative. De er gode til at tilpasse sig forandringer eller nye grupper mennesker, men kan være overbeviste om at de ikke har brug for andre.</p>
-                                <a class="btn btn-primary" href="abe.html" role="button">Læs mere</a>
-                            </div>
-                            </div>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                                Hanen
-                            </button>
-                            </p>
-                            <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <h3 class="text-center">Effektive • Ambitiøse • Sympatiske</h3>
-                                <p>Hanen er det tiende kinesiske stjernetegn.</p>
-                                <p>Personer født i hanens år er kloge, ambitiøse og handlekraftige, med en naturlig sans for lederskab og detaljer. Deres konkurrencegen og stærke retfærdighedssans gør dem til handlekraftige personer, men hvis deres ambitioner ikke realiseres, kan de fremstå som arrogante eller skuffede.</p>
-                                <a class="btn btn-primary" href="hane.html" role="button">Læs mere</a>
-                            </div>
-                            </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Dragen
+                        </button>
+                        </p>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h3 class="text-center">Idealistisk • Selvsikker • Ambitiøs</h3>
+                            <p>Dragen er det femte kinesiske stjernetegn.</p>
+                            <p>Personer født i dragens år er selvsikre, generøse og ambitiøse lederskikkelser med en stærk personlighed og eventyrlyst. De søger ægte forbindelser og værdsætter ærlighed højt, men kan virke dominerende og impulsive.</p>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                                Hunden
-                            </button>
-                            </p>
-                            <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="container text-center">
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <img src="img/Hund.png" alt="" class="img-fluid">
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <h2 class="text-center">Hunden</h2>
-                                            <h3 class="text-center">Loyal • Social • Omsorgsfuld</h3>
-                                            <p>Hunden er det ellevte kinesiske stjernetegn.</p>
-                                            <p>Personer født i hundens år er er loyale, følelsesdrevne og venlige personer med stor omsorg for familie og venner. Deres stærke følelser gør dem intuitive, men kan også føre til følelsesmæssig uro, impulsivitet og manglende tålmodighed, især når relationer er i ubalance.</p>
-                                            <a href="hund.html"><button>Læs mere</button></a>
-                                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Slangen
+                        </button>
+                        </p>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h3 class="text-center">Rolig • Kløgtig • Observant</h3>
+                            <p>Slangen er det sjette kinesiske stjernetegn.</p>
+                            <p>Personer født i slangens år er rolige, kløgtige og observerende personer, som ofte skjuler deres sårbarhed bag en behersket og tillidsvækkende ydre. De er intuitive, kunstneriske og gode under pres, men har behov for alenetid og kan virke følelsesmæssigt distancerede.</p>
+                            <a class="btn btn-primary" href="slange.html" role="button">Læs mere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            Hesten
+                        </button>
+                        </p>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><h3 class="text-center">Ansvarlig • Viljestærk • Omsorgsfuld</h3>
+                            <p>Hesten er det syvende kinesiske stjernetegn.</p>
+                            <p>Personer født i hestens år er selvsikre, udadvendte og viljestærke ledere, som elsker udfordringer og er drevet af passion og moral. De er ærlige og omsorgsfulde, men kan være utålmodige og have svært ved at fastholde interessen, når motivationen daler.</p>
+                            <a class="btn btn-primary" href="hest.html" role="button">Læs mere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                            Geden
+                        </button>
+                        </p>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h3 class="text-center">Empatisk • Trofast • Entusiastisk</h3>
+                            <p>Geden er det ottende kinesiske stjernetegn.</p>
+                            <p>Personer født i gedens år er ærlige, venlige og empatiske, oftest set som den mest uselviske person i deres vennekreds. De er medfølende og loyale, men kan blive hårdt såret af andres handlinger eller deres egen fiasko.</p>
+                            <a class="btn btn-primary" href="ged.html" role="button">Læs mere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                            Aben
+                        </button>
+                        </p>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h3 class="text-center">Observante • Innovative • Aktive</h3>
+                            <p>Aben er det niende kinesiske stjernetegn.</p>
+                            <p>Personer født i abens år er intelligente, innovative og kreative. De er gode til at tilpasse sig forandringer eller nye grupper mennesker, men kan være overbeviste om at de ikke har brug for andre.</p>
+                            <a class="btn btn-primary" href="abe.html" role="button">Læs mere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                            Hanen
+                        </button>
+                        </p>
+                        <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h3 class="text-center">Effektive • Ambitiøse • Sympatiske</h3>
+                            <p>Hanen er det tiende kinesiske stjernetegn.</p>
+                            <p>Personer født i hanens år er kloge, ambitiøse og handlekraftige, med en naturlig sans for lederskab og detaljer. Deres konkurrencegen og stærke retfærdighedssans gør dem til handlekraftige personer, men hvis deres ambitioner ikke realiseres, kan de fremstå som arrogante eller skuffede.</p>
+                            <a class="btn btn-primary" href="hane.html" role="button">Læs mere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                            Hunden
+                        </button>
+                        </p>
+                        <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <img src="img/Hund.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <h2 class="text-center">Hunden</h2>
+                                        <h3 class="text-center">Loyal • Social • Omsorgsfuld</h3>
+                                        <p>Hunden er det ellevte kinesiske stjernetegn.</p>
+                                        <p>Personer født i hundens år er er loyale, følelsesdrevne og venlige personer med stor omsorg for familie og venner. Deres stærke følelser gør dem intuitive, men kan også føre til følelsesmæssig uro, impulsivitet og manglende tålmodighed, især når relationer er i ubalance.</p>
+                                        <a href="hund.html"><button>Læs mere</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <p class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
-                                Grisen
-                            </button>
-                            </p>
-                            <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                            Grisen
+                        </button>
+                        </p>
+                        <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="container text-center">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <img src="img/Gris.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <h2>Grisen</h2>
+                                            <h5 class="ord">Optimistisk • Ærlig • Generøs</h5>
+                                            <p>Grisen er det tolvte kinesiske stjernetegn.</p>
+                                            <p>Personer født i grisens år er rolige, optimistiske og venlige personer med et skarpt intellekt og stor generøsitet. De er ærlige og engagerede, især når de ser mening med deres opgaver, men kan også være overbærende, følelsesmæssigt skrøbelige og tilbøjelige til at trække sig tilbage, hvis de føler sig såret.</p>
+                                            <a href="gris.html"><button>Læs mere</button></a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Valg af stjernetegn Desktop -->
+                <div class="index-stjernetegn-desktop">
+                    <div class="row">
+                        <div class="col text">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-rotten-tab" data-bs-toggle="pill" data-bs-target="#pills-rotten" type="button" role="tab" aria-controls="pills-rotten" aria-selected="true">
+                                        <img src="img/Mus-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-oksen-tab" data-bs-toggle="pill" data-bs-target="#pills-oksen" type="button" role="tab" aria-controls="pills-oksen" aria-selected="false">
+                                        <img src="img/Ko-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-tigeren-tab" data-bs-toggle="pill" data-bs-target="#pills-tigeren" type="button" role="tab" aria-controls="pills-tigeren" aria-selected="false">
+                                        <img src="img/Tiger-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-kaninen-tab" data-bs-toggle="pill" data-bs-target="#pills-kaninen" type="button" role="tab" aria-controls="pills-kaninen" aria-selected="false">
+                                        <img src="img/Kanin-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-dragen-tab" data-bs-toggle="pill" data-bs-target="#pills-dragen" type="button" role="tab" aria-controls="pills-dragen" aria-selected="false">
+                                        <img src="img/Drage-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-slangen-tab" data-bs-toggle="pill" data-bs-target="#pills-slangen" type="button" role="tab" aria-controls="pills-slangen" aria-selected="false">
+                                        <img src="img/Slange-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-hesten-tab" data-bs-toggle="pill" data-bs-target="#pills-hesten" type="button" role="tab" aria-controls="pills-hesten" aria-selected="false">
+                                        <img src="img/Hest-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-geden-tab" data-bs-toggle="pill" data-bs-target="#pills-geden" type="button" role="tab" aria-controls="pills-geden" aria-selected="false">
+                                        <img src="img/Ged-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-aben-tab" data-bs-toggle="pill" data-bs-target="#pills-aben" type="button" role="tab" aria-controls="pills-aben" aria-selected="false">
+                                        <img src="img/Abe-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-hanen-tab" data-bs-toggle="pill" data-bs-target="#pills-hanen" type="button" role="tab" aria-controls="pills-hanen" aria-selected="false">
+                                        <img src="img/Hane-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-hunden-tab" data-bs-toggle="pill" data-bs-target="#pills-hunden" type="button" role="tab" aria-controls="pills-hunden" aria-selected="false">
+                                        <img src="img/Hund-outline.png" alt="">
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-grisen-tab" data-bs-toggle="pill" data-bs-target="#pills-grisen" type="button" role="tab" aria-controls="pills-grisen" aria-selected="false">
+                                        <img src="img/Gris-outline.png" alt="">
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="underline line"></div>
+                            <!-- Indhold til hver af stjernetegnene-->
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-rotten" role="tabpanel" aria-labelledby="pills-rotten-tab" tabindex="0">
                                     <div class="container text-center">
-                                        <div class="row">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Mus.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Rotten</h2>
+                                                <h5 class="ord">Forstand • Ambition • Charme</h5>
+                                                <p>Rotten er det første kinesiske stjernetegn.</p>
+                                                <p>Personer født i rottens år er som regel humørfyldte, sociale og stædige personer, som trives ved at være en del af en gruppe. Dette stjernetegn værdsætter tryghed i forskellige aspekter af deres liv, hvilket påvirker deres valg af karriere og kærlighed.</p>
+                                                <a href="rotte.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-oksen" role="tabpanel" aria-labelledby="pills-oksen-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Ko.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Oksen</h2>
+                                                <h5 class="ord">Beskeden • Tillidsfuld • Tålmodig</h5>
+                                                <p>Oksen er det andet kinesiske stjernetegn.</p>
+                                                <p>Personer født i oksens år er ansvarlige, jordnære og hårdtarbejdende. De er ofte stille og pålidelige, men kan også virke stædige og temperamentsfulde, især hvis deres grænser overskrides.</p>
+                                                <a href="okse.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-tigeren" role="tabpanel" aria-labelledby="pills-tigeren-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Tiger.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Tigeren</h2>
+                                                <h5 class="ord">Selvsikker • Uafhængig • Ærlig</h5>
+                                                <p>Tigeren er det tredje kinesiske stjernetegn.</p>
+                                                <p>Personer født i tigerens år er karismatiske, viljestærke og modige individer, der udstråler positiv energi og elsker udfordringer. De har store ambitioner og er ærlige og direkte i deres kommunikation.</p>
+                                                <a href="tiger.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-kaninen" role="tabpanel" aria-labelledby="pills-kaninen-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Kanin.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Kaninen</h2>
+                                                <h5 class="ord">Optimistisk • Opfindsom • Følsom</h5>
+                                                <p>Kaninen er det fjerde kinesiske stjernetegn.</p>
+                                                <p>Personer født i kaninens år har fokus på harmoni og balance, hvoraf de søger fred og undgår konflikt så vidt muligt. De er venlige, intelligente og tilpasningsdygtige, men også følsomme og forsigtige.</p>
+                                                <a href="kanin.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-dragen" role="tabpanel" aria-labelledby="pills-dragen-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Drage.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Dragen</h2>
+                                                <h5 class="ord">Idealistisk • Selvsikker • Ambitiøs</h5>
+                                                <p>Dragen er det femte kinesiske stjernetegn.</p>
+                                                <p>Personer født i dragens år er selvsikre, generøse og ambitiøse lederskikkelser med en stærk personlighed og eventyrlyst. De søger ægte forbindelser og værdsætter ærlighed højt, men kan virke dominerende og impulsive.</p>
+                                                <a href="drage.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-slangen" role="tabpanel" aria-labelledby="pills-slangen-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Slange.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Slangen</h2>
+                                                <h5 class="ord">Rolig • Kløgtig • Observant</h5>
+                                                <p>Slangen er det sjette kinesiske stjernetegn.</p>
+                                                <p>Personer født i slangens år er rolige, kløgtige og observerende personer, som ofte skjuler deres sårbarhed bag en behersket og tillidsvækkende ydre. De er intuitive, kunstneriske og gode under pres, men har behov for alenetid og kan virke følelsesmæssigt distancerede.</p>
+                                                <a href="slange.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-hesten" role="tabpanel" aria-labelledby="pills-hesten-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Hest.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Hesten</h2>
+                                                <h5 class="ord">Ansvarlig • Viljestærk • Omsorgsfuld</h5>
+                                                <p>Hesten er det syvende kinesiske stjernetegn.</p>
+                                                <p>Personer født i hestens år er selvsikre, udadvendte og viljestærke ledere, som elsker udfordringer og er drevet af passion og moral. De er ærlige og omsorgsfulde, men kan være utålmodige og have svært ved at fastholde interessen, når motivationen daler.</p>
+                                                <a href="hest.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-geden" role="tabpanel" aria-labelledby="pills-geden-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Ged.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Geden</h2>
+                                                <h5 class="ord">Empatisk • Trofast • Entusiastisk</h5>
+                                                <p>Geden er det ottende kinesiske stjernetegn.</p>
+                                                <p>Personer født i gedens år er ærlige, venlige og empatiske, oftest set som den mest uselviske person i deres vennekreds. De er medfølende og loyale, men kan blive hårdt såret af andres handlinger eller deres egen fiasko.</p>
+                                                <a href="ged.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-aben" role="tabpanel" aria-labelledby="pills-aben-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Abe.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Aben</h2>
+                                                <h5 class="ord">Observante • Innovative • Aktive</h5>
+                                                <p>Aben er det niende kinesiske stjernetegn.</p>
+                                                <p>Personer født i abens år er intelligente, innovative og kreative. De er gode til at tilpasse sig forandringer eller nye grupper mennesker, men kan være overbeviste om at de ikke har brug for andre.</p>
+                                                <a href="abe.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-hanen" role="tabpanel" aria-labelledby="pills-hanen-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Hane.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Hanen</h2>
+                                                <h5 class="ord">Effektive • Ambitiøse • Sympatiske</h5>
+                                                <p>Hanen er det tiende kinesiske stjernetegn.</p>
+                                                <p>Personer født i hanens år er kloge, ambitiøse og handlekraftige, med en naturlig sans for lederskab og detaljer. Deres konkurrencegen og stærke retfærdighedssans gør dem til handlekraftige personer, men hvis deres ambitioner ikke realiseres, kan de fremstå som arrogante eller skuffede.</p>
+                                                <a href="hane.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-hunden" role="tabpanel" aria-labelledby="pills-hunden-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <img src="img/Hund.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h2 class="text-center">Hunden</h2>
+                                                <h5 class="ord">Loyal • Social • Omsorgsfuld</h5>
+                                                <p>Hunden er det ellevte kinesiske stjernetegn.</p>
+                                                <p>Personer født i hundens år er er loyale, følelsesdrevne og venlige personer med stor omsorg for familie og venner. Deres stærke følelser gør dem intuitive, men kan også føre til følelsesmæssig uro, impulsivitet og manglende tålmodighed, især når relationer er i ubalance.</p>
+                                                <a href="hund.html"><button>Læs mere</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-grisen" role="tabpanel" aria-labelledby="pills-grisen-tab" tabindex="0">
+                                    <div class="container text-center">
+                                        <div class="row align-items-center">
                                             <div class="col-12 col-lg-6">
                                                 <img src="img/Gris.png" alt="" class="img-fluid">
                                             </div>
@@ -289,409 +560,144 @@
                                                 <a href="gris.html"><button>Læs mere</button></a>
                                             </div>
                                         </div>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- Valg af stjernetegn Desktop -->
-                    <div class="index-stjernetegn-desktop">
-                        <div class="row">
-                            <div class="col text">
-                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="pills-rotten-tab" data-bs-toggle="pill" data-bs-target="#pills-rotten" type="button" role="tab" aria-controls="pills-rotten" aria-selected="true">
-                                            <img src="img/Mus-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-oksen-tab" data-bs-toggle="pill" data-bs-target="#pills-oksen" type="button" role="tab" aria-controls="pills-oksen" aria-selected="false">
-                                            <img src="img/Ko-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-tigeren-tab" data-bs-toggle="pill" data-bs-target="#pills-tigeren" type="button" role="tab" aria-controls="pills-tigeren" aria-selected="false">
-                                            <img src="img/Tiger-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-kaninen-tab" data-bs-toggle="pill" data-bs-target="#pills-kaninen" type="button" role="tab" aria-controls="pills-kaninen" aria-selected="false">
-                                            <img src="img/Kanin-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-dragen-tab" data-bs-toggle="pill" data-bs-target="#pills-dragen" type="button" role="tab" aria-controls="pills-dragen" aria-selected="false">
-                                            <img src="img/Drage-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-slangen-tab" data-bs-toggle="pill" data-bs-target="#pills-slangen" type="button" role="tab" aria-controls="pills-slangen" aria-selected="false">
-                                            <img src="img/Slange-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-hesten-tab" data-bs-toggle="pill" data-bs-target="#pills-hesten" type="button" role="tab" aria-controls="pills-hesten" aria-selected="false">
-                                            <img src="img/Hest-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-geden-tab" data-bs-toggle="pill" data-bs-target="#pills-geden" type="button" role="tab" aria-controls="pills-geden" aria-selected="false">
-                                            <img src="img/Ged-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-aben-tab" data-bs-toggle="pill" data-bs-target="#pills-aben" type="button" role="tab" aria-controls="pills-aben" aria-selected="false">
-                                            <img src="img/Abe-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-hanen-tab" data-bs-toggle="pill" data-bs-target="#pills-hanen" type="button" role="tab" aria-controls="pills-hanen" aria-selected="false">
-                                            <img src="img/Hane-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-hunden-tab" data-bs-toggle="pill" data-bs-target="#pills-hunden" type="button" role="tab" aria-controls="pills-hunden" aria-selected="false">
-                                            <img src="img/Hund-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-grisen-tab" data-bs-toggle="pill" data-bs-target="#pills-grisen" type="button" role="tab" aria-controls="pills-grisen" aria-selected="false">
-                                            <img src="img/Gris-outline.png" alt="">
-                                        </button>
-                                    </li>
-                                </ul>
-                                <div class="underline line"></div>
-                                <!-- Indhold til hver af stjernetegnene-->
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-rotten" role="tabpanel" aria-labelledby="pills-rotten-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Mus.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Rotten</h2>
-                                                    <h5 class="ord">Forstand • Ambition • Charme</h5>
-                                                    <p>Rotten er det første kinesiske stjernetegn.</p>
-                                                    <p>Personer født i rottens år er som regel humørfyldte, sociale og stædige personer, som trives ved at være en del af en gruppe. Dette stjernetegn værdsætter tryghed i forskellige aspekter af deres liv, hvilket påvirker deres valg af karriere og kærlighed.</p>
-                                                    <a href="rotte.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-oksen" role="tabpanel" aria-labelledby="pills-oksen-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Ko.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Oksen</h2>
-                                                    <h5 class="ord">Beskeden • Tillidsfuld • Tålmodig</h5>
-                                                    <p>Oksen er det andet kinesiske stjernetegn.</p>
-                                                    <p>Personer født i oksens år er ansvarlige, jordnære og hårdtarbejdende. De er ofte stille og pålidelige, men kan også virke stædige og temperamentsfulde, især hvis deres grænser overskrides.</p>
-                                                    <a href="okse.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-tigeren" role="tabpanel" aria-labelledby="pills-tigeren-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Tiger.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Tigeren</h2>
-                                                    <h5 class="ord">Selvsikker • Uafhængig • Ærlig</h5>
-                                                    <p>Tigeren er det tredje kinesiske stjernetegn.</p>
-                                                    <p>Personer født i tigerens år er karismatiske, viljestærke og modige individer, der udstråler positiv energi og elsker udfordringer. De har store ambitioner og er ærlige og direkte i deres kommunikation.</p>
-                                                    <a href="tiger.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-kaninen" role="tabpanel" aria-labelledby="pills-kaninen-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Kanin.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Kaninen</h2>
-                                                    <h5 class="ord">Optimistisk • Opfindsom • Følsom</h5>
-                                                    <p>Kaninen er det fjerde kinesiske stjernetegn.</p>
-                                                    <p>Personer født i kaninens år har fokus på harmoni og balance, hvoraf de søger fred og undgår konflikt så vidt muligt. De er venlige, intelligente og tilpasningsdygtige, men også følsomme og forsigtige.</p>
-                                                    <a href="kanin.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-dragen" role="tabpanel" aria-labelledby="pills-dragen-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Drage.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Dragen</h2>
-                                                    <h5 class="ord">Idealistisk • Selvsikker • Ambitiøs</h5>
-                                                    <p>Dragen er det femte kinesiske stjernetegn.</p>
-                                                    <p>Personer født i dragens år er selvsikre, generøse og ambitiøse lederskikkelser med en stærk personlighed og eventyrlyst. De søger ægte forbindelser og værdsætter ærlighed højt, men kan virke dominerende og impulsive.</p>
-                                                    <a href="drage.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-slangen" role="tabpanel" aria-labelledby="pills-slangen-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Slange.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Slangen</h2>
-                                                    <h5 class="ord">Rolig • Kløgtig • Observant</h5>
-                                                    <p>Slangen er det sjette kinesiske stjernetegn.</p>
-                                                    <p>Personer født i slangens år er rolige, kløgtige og observerende personer, som ofte skjuler deres sårbarhed bag en behersket og tillidsvækkende ydre. De er intuitive, kunstneriske og gode under pres, men har behov for alenetid og kan virke følelsesmæssigt distancerede.</p>
-                                                    <a href="slange.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-hesten" role="tabpanel" aria-labelledby="pills-hesten-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Hest.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Hesten</h2>
-                                                    <h5 class="ord">Ansvarlig • Viljestærk • Omsorgsfuld</h5>
-                                                    <p>Hesten er det syvende kinesiske stjernetegn.</p>
-                                                    <p>Personer født i hestens år er selvsikre, udadvendte og viljestærke ledere, som elsker udfordringer og er drevet af passion og moral. De er ærlige og omsorgsfulde, men kan være utålmodige og have svært ved at fastholde interessen, når motivationen daler.</p>
-                                                    <a href="hest.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-geden" role="tabpanel" aria-labelledby="pills-geden-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Ged.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Geden</h2>
-                                                    <h5 class="ord">Empatisk • Trofast • Entusiastisk</h5>
-                                                    <p>Geden er det ottende kinesiske stjernetegn.</p>
-                                                    <p>Personer født i gedens år er ærlige, venlige og empatiske, oftest set som den mest uselviske person i deres vennekreds. De er medfølende og loyale, men kan blive hårdt såret af andres handlinger eller deres egen fiasko.</p>
-                                                    <a href="ged.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-aben" role="tabpanel" aria-labelledby="pills-aben-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Abe.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Aben</h2>
-                                                    <h5 class="ord">Observante • Innovative • Aktive</h5>
-                                                    <p>Aben er det niende kinesiske stjernetegn.</p>
-                                                    <p>Personer født i abens år er intelligente, innovative og kreative. De er gode til at tilpasse sig forandringer eller nye grupper mennesker, men kan være overbeviste om at de ikke har brug for andre.</p>
-                                                    <a href="abe.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-hanen" role="tabpanel" aria-labelledby="pills-hanen-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Hane.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Hanen</h2>
-                                                    <h5 class="ord">Effektive • Ambitiøse • Sympatiske</h5>
-                                                    <p>Hanen er det tiende kinesiske stjernetegn.</p>
-                                                    <p>Personer født i hanens år er kloge, ambitiøse og handlekraftige, med en naturlig sans for lederskab og detaljer. Deres konkurrencegen og stærke retfærdighedssans gør dem til handlekraftige personer, men hvis deres ambitioner ikke realiseres, kan de fremstå som arrogante eller skuffede.</p>
-                                                    <a href="hane.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-hunden" role="tabpanel" aria-labelledby="pills-hunden-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Hund.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2 class="text-center">Hunden</h2>
-                                                    <h5 class="ord">Loyal • Social • Omsorgsfuld</h5>
-                                                    <p>Hunden er det ellevte kinesiske stjernetegn.</p>
-                                                    <p>Personer født i hundens år er er loyale, følelsesdrevne og venlige personer med stor omsorg for familie og venner. Deres stærke følelser gør dem intuitive, men kan også føre til følelsesmæssig uro, impulsivitet og manglende tålmodighed, især når relationer er i ubalance.</p>
-                                                    <a href="hund.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-grisen" role="tabpanel" aria-labelledby="pills-grisen-tab" tabindex="0">
-                                        <div class="container text-center">
-                                            <div class="row align-items-center">
-                                                <div class="col-12 col-lg-6">
-                                                    <img src="img/Gris.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="col-12 col-lg-6">
-                                                    <h2>Grisen</h2>
-                                                    <h5 class="ord">Optimistisk • Ærlig • Generøs</h5>
-                                                    <p>Grisen er det tolvte kinesiske stjernetegn.</p>
-                                                    <p>Personer født i grisens år er rolige, optimistiske og venlige personer med et skarpt intellekt og stor generøsitet. De er ærlige og engagerede, især når de ser mening med deres opgaver, men kan også være overbærende, følelsesmæssigt skrøbelige og tilbøjelige til at trække sig tilbage, hvis de føler sig såret.</p>
-                                                    <a href="gris.html"><button>Læs mere</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="stjernetegn-bg">
-        <div class="container text-center">
-            <!-- find stjernetegn -->
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <h2>Find dit kinesiske stjernetegn</h2>
-                    <form>
-                        <h4>Indtast din fødselsdag:</h4>
-                        <select name="" id="day"><optgroup class="form-options"></optgroup>
-                        
-                        <script>
-                        var startDay = 1;
-                        var endDay = 31;
-                        var optionsDay = "";
-                        for (var d = startDay; d <= endDay; d++) {
-                            optionsDay += "<option>" + d + "</option>";
-                        }
-                        document.getElementById("day").innerHTML = optionsDay;
-                        </script></select>
-                        <select name="" id="month">
-                            <optgroup class="form-options">
-                            <option value="1">Januar</option>
-                            <option value="2">Februar</option>
-                            <option value="3">Marts</option>
-                            <option value="4">April</option>
-                            <option value="5">Maj</option>
-                            <option value="6">Juni</option>
-                            <option value="7">Juli</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
-                            <option value="10">Oktober</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option></optgroup>
-                        </select>
-                        <select name="" id="year"><optgroup class="form-options"></optgroup></select>
-                            <script>
-                        var startYear = 1900;
-                        var endYear = new Date().getFullYear();
-                        //var endYear = 2099;
-                        var optionsYear = "";
-                        for (var y = endYear; y >= startYear; y--) {
-                            optionsYear += "<option>" + y + "</option>";
-                        }
-                        document.getElementById("year").innerHTML = optionsYear;
-                        </script>
-                        <br>
-                        <button type="button" onclick="scriptButton()">Find dit kinesiske stjernetegn</button>
-                    <p id="answer"></p>
-                    <button id="reset-button" type="reset" value="Reset" onclick="resetSign()"/>Reset</button>
-                    </form>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="container året text-center">
-            <!-- Årets tegn -->
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-lg-6">
-                    <img src="img/year-of-the-snake.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-lg-6">
-                    <h2>Slangens år</h2>
-                    <p>2025 er slangens år, hvilket betyder at året vil blive præget af karaktertræk, som er forbundet med stjernetegnet slangen. Uanset om dit eget stjernetegn er slangen eller ej, vil dit 2025, ifølge kinesiske skikke, også være præget af disse karaktertræk.</p>
-                    <p>Slangen er et symbol på personlig udvikling, set typisk når de skifter deres ham. Det betyder at 2025 er året til at transformere sig og slippe af med gamle vaner. Tag dig tid til at reflektere over dine mål og genfind dig selv.</p>
-                    <a href="slange.html"><button>Læs mere om slangen</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="sagn-bg">
-            <div class="container text-center">
-            <!-- Sagnet om tegnene -->
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-lg-6">
-                        <h2>Sagnet om de kinesiske stjernetegn</h2>
-                        <p>Vidste du, at der er et folkesagn forbundet med de kinesiske stjernetegn? Læs denne historie og meget mere om det kinesiske nytår her.</p>
-                        <a href="historie.html"><button>Læs mere</button></a>
-                    </div>
-                    <div class="col-sm-12 col-lg-6">
-                        <img src="img/jadekejser.jpg" alt="jadekejser på sin trone, rødt tøj " class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <h5>De kinesiske stjernetegn</h5>
-                        <div class="row">
-                            <div class="col-3 footer-stjernetegn">
-                                <ul>
-                                    <li><a href="rotte.html">Rotten</a></li>
-                                    <li><a href="okse.html">Oksen</a></li>
-                                    <li><a href="tiger.html">Tigeren</a></li>
-                                    <li><a href="kanin.html">Kaninen</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-3">
-                                <ul>
-                                    <li><a href="drage.html">Dragen</a></li>
-                                    <li><a href="slange.html">Slangen</a></li>
-                                    <li><a href="hest.html">Hesten</a></li>
-                                    <li><a href="ged.html">Geden</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-3">
-                                <ul>
-                                    <li><a href="abe.html">Aben</a></li>
-                                    <li><a href="hane.html">Hanen</a></li>
-                                    <li><a href="hund.html">Hunden</a></li>
-                                    <li><a href="gris.html">Grisen</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <h5>Om K-Astro</h5>
-                        <p>K-Astro er en ressource for alle, som har interesse i at lære om de kinesiske stjernetegn og østasiatisk kultur. Vi tror på at med forståelse og åbenhed for andres kulturer, vaner og skikke kan vi komme tættere på hinanden.</p>
-                        <p><a href="om-os.html">Om os</a></p>
-                        <p><a href="historie.html">Historien om de kinesiske stjernetegn</a></p>
-                    </div>
-                <div class="row">
-                    <div class="col-12 text-center copyright">
-                        &copy; Copyright K-Astro 2025.
-                    </div>
+    <div class="stjernetegn-bg">
+    <div class="container text-center">
+        <!-- find stjernetegn -->
+        <div class="row align-items-center">
+            <div class="col-12">
+                <h2>Find dit kinesiske stjernetegn</h2>
+                <form>
+                    <h4>Indtast din fødselsdag:</h4>
+                    <select name="" id="day"><optgroup class="form-options"></optgroup>
+                    
+                    <script>
+                    var startDay = 1;
+                    var endDay = 31;
+                    var optionsDay = "";
+                    for (var d = startDay; d <= endDay; d++) {
+                        optionsDay += "<option>" + d + "</option>";
+                    }
+                    document.getElementById("day").innerHTML = optionsDay;
+                    </script></select>
+                    <select name="" id="month">
+                        <optgroup class="form-options">
+                        <option value="1">Januar</option>
+                        <option value="2">Februar</option>
+                        <option value="3">Marts</option>
+                        <option value="4">April</option>
+                        <option value="5">Maj</option>
+                        <option value="6">Juni</option>
+                        <option value="7">Juli</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">Oktober</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option></optgroup>
+                    </select>
+                    <select name="" id="year"><optgroup class="form-options"></optgroup></select>
+                        <script>
+                    var startYear = 1900;
+                    var endYear = new Date().getFullYear();
+                    //var endYear = 2099;
+                    var optionsYear = "";
+                    for (var y = endYear; y >= startYear; y--) {
+                        optionsYear += "<option>" + y + "</option>";
+                    }
+                    document.getElementById("year").innerHTML = optionsYear;
+                    </script>
+                    <br>
+                    <button type="button" onclick="scriptButton()">Find dit kinesiske stjernetegn</button>
+                <p id="answer"></p>
+                <button id="reset-button" type="reset" value="Reset" onclick="resetSign()"/>Reset</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container året text-center">
+        <!-- Årets tegn -->
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-lg-6">
+                <img src="img/year-of-the-snake.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <h2>Slangens år</h2>
+                <p>2025 er slangens år, hvilket betyder at året vil blive præget af karaktertræk, som er forbundet med stjernetegnet slangen. Uanset om dit eget stjernetegn er slangen eller ej, vil dit 2025, ifølge kinesiske skikke, også være præget af disse karaktertræk.</p>
+                <p>Slangen er et symbol på personlig udvikling, set typisk når de skifter deres ham. Det betyder at 2025 er året til at transformere sig og slippe af med gamle vaner. Tag dig tid til at reflektere over dine mål og genfind dig selv.</p>
+                <a href="slange.html"><button>Læs mere om slangen</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="sagn-bg">
+        <div class="container text-center">
+        <!-- Sagnet om tegnene -->
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-lg-6">
+                    <h2>Sagnet om de kinesiske stjernetegn</h2>
+                    <p>Vidste du, at der er et folkesagn forbundet med de kinesiske stjernetegn? Læs denne historie og meget mere om det kinesiske nytår her.</p>
+                    <a href="historie.html"><button>Læs mere</button></a>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <img src="img/jadekejser.jpg" alt="jadekejser på sin trone, rødt tøj " class="img-fluid">
                 </div>
             </div>
-        </footer>
-        <script src="script.js"></script>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h5>De kinesiske stjernetegn</h5>
+                    <div class="row">
+                        <div class="col-3 footer-stjernetegn">
+                            <ul>
+                                <li><a href="rotte.html">Rotten</a></li>
+                                <li><a href="okse.html">Oksen</a></li>
+                                <li><a href="tiger.html">Tigeren</a></li>
+                                <li><a href="kanin.html">Kaninen</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul>
+                                <li><a href="drage.html">Dragen</a></li>
+                                <li><a href="slange.html">Slangen</a></li>
+                                <li><a href="hest.html">Hesten</a></li>
+                                <li><a href="ged.html">Geden</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul>
+                                <li><a href="abe.html">Aben</a></li>
+                                <li><a href="hane.html">Hanen</a></li>
+                                <li><a href="hund.html">Hunden</a></li>
+                                <li><a href="gris.html">Grisen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h5>Om K-Astro</h5>
+                    <p>K-Astro er en ressource for alle, som har interesse i at lære om de kinesiske stjernetegn og østasiatisk kultur. Vi tror på at med forståelse og åbenhed for andres kulturer, vaner og skikke kan vi komme tættere på hinanden.</p>
+                    <p><a href="om-os.html">Om os</a></p>
+                    <p><a href="historie.html">Historien om de kinesiske stjernetegn</a></p>
+                </div>
+            <div class="row">
+                <div class="col-12 text-center copyright">
+                    &copy; Copyright K-Astro 2025.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
