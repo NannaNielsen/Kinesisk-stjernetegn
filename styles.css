@@ -150,14 +150,12 @@ nav{
     background-color: var(--beige);
     margin: 5px auto 15px;
 }
-
 .nav-links {
     display: flex;
     justify-content: center;
     gap: 30px;
     position: relative;
 }
-
 .nav-links a, .dropdown-btn {
     color: var(--beige);
     text-decoration: none;
@@ -171,7 +169,6 @@ nav{
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content, .dropdown-menu.show {
     display: none;
     position: absolute;
@@ -269,6 +266,9 @@ nav{
 }
 .nav-link.active img{
     border-bottom: solid 2px var(--black);
+}
+.stjernetegn{
+    margin: auto;
 }
 .stjernetegn-bg p{
     text-align: center;
