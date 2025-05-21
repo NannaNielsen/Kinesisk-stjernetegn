@@ -3,74 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotten</title>
-    
+    <title>K-Astro</title>
+
+    <!-- Favicon: -->
+    <link rel="icon" type="image" href="img/logo.png">
+
+    <!-- Meta beskrivelse: -->
+    <meta name="description" content="K-Astro er en ressource til at lære og forstå de kinesiske stjernetegn. Find dit og andres kinesiske stjernetegn og lær om historien bag dem.">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Skrifttyper -->
-    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
+     <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
+     <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
 
     <!-- Bootstrap, Popper og JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-
+    
 </head>
 <body>
     <!-- Navbar mobil -->
     <nav class="navbar navbar-dark sticky-top navbar-mobil">
         <div class="container-fluid">
-            <a href="index.html"><h1>K-Astro</h1></a>
+            <a href="index.html"><h1>K-astro</h1></a>
             <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            STJERNETEGN
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
-                            <li><a class="dropdown-item" href="okse.html">Okse</a></li>
-                            <li><a class="dropdown-item" href="tiger.html">Tiger</a></li>
-                            <li><a class="dropdown-item" href="kanin.html">Kanin</a></li>
-                            <li><a class="dropdown-item" href="drage.html">Drage</a></li>
-                            <li><a class="dropdown-item" href="slange.html">Slange</a></li>
-                            <li><a class="dropdown-item" href="hest.html">Hest</a></li>
-                            <li><a class="dropdown-item" href="ged.html">Ged</a></li>
-                            <li><a class="dropdown-item" href="abe.html">Abe</a></li>
-                            <li><a class="dropdown-item" href="hane.html">Hane</a></li>
-                            <li><a class="dropdown-item" href="hund.html">Hund</a></li>
-                            <li><a class="dropdown-item" href="gris.html">Gris</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historie.html">HISTORIE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="om-os.html">OM OS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar custom desktop -->
-    <div class="navbaren sticky-top navbar-desktop">
-        <a href="index.html"><h1>K-Astro</h1></a>
-        <div class="underline"></div>
-        <div class="nav-links">
-            <div class="dropdown">
-                <div class="nav-active">
-                    <a class="dropdown-btn">STJERNETEGN ▼</a>
-                </div>
-                <div class="dropdown-content">
-                    <ul>
-                        <div class="nav-active">
-                            <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
-                        </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#index-beregner">FIND DIT STJERNETEGN</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        STJERNETEGN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
                         <li><a class="dropdown-item" href="okse.html">Okse</a></li>
                         <li><a class="dropdown-item" href="tiger.html">Tiger</a></li>
                         <li><a class="dropdown-item" href="kanin.html">Kanin</a></li>
@@ -83,12 +55,50 @@
                         <li><a class="dropdown-item" href="hund.html">Hund</a></li>
                         <li><a class="dropdown-item" href="gris.html">Gris</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historie.html">HISTORIE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="om-os.html">OM OS</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar custom desktop -->
+    <div class="navbaren sticky-top navbar-desktop">
+        <a href="index.html"><h1>K-Astro</h1></a>
+        <div class="underline"></div>
+        <div class="nav-links">
+            <a href="index.html#index-beregner">FIND DIT STJERNETEGN</a>
+            <div class="dropdown">
+                <div class="nav-acctive">
+                    <a class="dropdown-btn">STJERNETEGN ▼</a>
                 </div>
+            <div class="dropdown-content">
+                <ul>
+                    <div class="nav-active">
+                        <li><a class="dropdown-item" href="rotte.html">Rotte</a></li>
+                    </div>
+                    <li><a class="dropdown-item" href="okse.html">Okse</a></li>
+                    <li><a class="dropdown-item" href="tiger.html">Tiger</a></li>
+                    <li><a class="dropdown-item" href="kanin.html">Kanin</a></li>
+                    <li><a class="dropdown-item" href="drage.html">Drage</a></li>
+                    <li><a class="dropdown-item" href="slange.html">Slange</a></li>
+                    <li><a class="dropdown-item" href="hest.html">Hest</a></li>
+                    <li><a class="dropdown-item" href="ged.html">Ged</a></li>
+                    <li><a class="dropdown-item" href="abe.html">Abe</a></li>
+                    <li><a class="dropdown-item" href="hane.html">Hane</a></li>
+                    <li><a class="dropdown-item" href="hund.html">Hund</a></li>
+                    <li><a class="dropdown-item" href="gris.html">Gris</a></li>
+                </ul>
+            </div>
             </div>
             <a href="historie.html">HISTORIE</a>
             <a href="om-os.html">OM OS</a>
         </div>
-    </div>
+     </div>
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
