@@ -274,6 +274,9 @@ nav{
     background-color: var(--base-red);
     color: var(--beige);
 }
+.stjernetegn, .stjernetegn-bg, .sagn-bg, .året{
+    padding: 2em 0;
+}
 /* Stjernetegn-sider------------------------------------------------------------------------- */
 .sign-image{
     margin-top: 1em;
