@@ -223,8 +223,8 @@ nav{
 }
 .anchor{
     display:block;
-    height:169px; /*højde på header*/
-    margin-top:-169px; /*negative højde på header*/
+    height:160px; /*højde på header*/
+    margin-top:-160px; /*negative højde på header*/
     visibility:hidden;
 }
 .accordion-item{
@@ -388,6 +388,7 @@ footer a{
     }
     .navbaren.sticky-top.navbar-desktop{
         z-index: 1021;
+        max-height: 160px;
     }
     .navbar.sticky-top.navbar-mobil, .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
