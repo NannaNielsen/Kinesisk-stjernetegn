@@ -386,6 +386,9 @@ footer a{
     h2{
         padding: 0.5em 0em;
     }
+    .navbaren.sticky-top.navbar-desktop{
+        z-index: 1021;
+    }
     .navbar.sticky-top.navbar-mobil, .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
         display: none; 
