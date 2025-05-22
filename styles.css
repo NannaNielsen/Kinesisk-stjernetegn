@@ -44,6 +44,7 @@ h2{
     font-weight: 400;
     font-style: normal;
     text-size-adjust: 110%;
+    padding-top: 1em;
 }
 h3{
     font-family: "roboto", sans-serif;
@@ -241,7 +242,9 @@ nav{
 }
 .accordion-button:not(.collapsed){
     background-color: var(--base-red) !important;
-    
+}
+.accordion-body{
+    background-color: white;
 }
 .nav-item button{
     background-color: none;
