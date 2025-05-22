@@ -61,6 +61,11 @@ h4{
     font-style: normal;
     padding-top: 0.5em;
 }
+h6{
+    font-family: "roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
 a{
     font-family: "roboto", sans-serif;
     font-weight: 300;
@@ -290,6 +295,15 @@ nav{
 }
 .years, .ord{
     margin: 0 auto;
+}
+.lykketing img{
+    max-height: 88px;
+}
+.lykketing h6{
+    padding-top: 1em;
+}
+.lykketing p{
+    text-align: center;
 }
 /* Viser/fjerner navigation mellem mobil og desktop visning----------------------------------- */
 .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
