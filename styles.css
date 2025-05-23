@@ -251,10 +251,14 @@ nav{
 .accordion-body{
     background-color: white;
 }
+/* Stjernetegns billede linje--------------------- */
 .nav-item button{
     background-color: none;
     margin-bottom: 0;
     filter: grayscale(100%);
+}
+.nav-item button.aktiv{
+    filter: grayscale(0%);
 }
 .nav-item button:hover{
     background-color: var(--beige) !important;
@@ -276,10 +280,12 @@ nav{
 }
 .nav-link.active{
     background-color: var(--beige) !important;
+    filter: grayscale(0%);
 }
 .nav-link.active img{
-    border-bottom: solid 2px var(--black);
+    filter: grayscale(0%);
 }
+/* ---------------------------------------------- */
 .stjernetegn{
     margin: auto;
 }
@@ -364,6 +370,7 @@ footer{
 footer h5 {
     padding: 0.5em 0;
     text-align: left;
+    font-family: "roboto", sans-serif;
 }
 footer p{
     margin: 0;
