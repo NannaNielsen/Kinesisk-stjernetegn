@@ -15,7 +15,7 @@ function scriptButton() {
 
     // Mapping af billeder til hvert stjernetegn
     const signImages = {
-        rotten: "img/Mus-lys.png",
+        rotten: "img/Mus-m-baggrund.png",
         oksen: "img/Ko-m-baggrund.png",
         tigeren: "img/Tiger-m-baggrund.png",
         kaninen: "img/Kanin-m-baggrund.png",
