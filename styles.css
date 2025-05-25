@@ -305,6 +305,9 @@ nav{
     padding: 2em 0;
 }
 /* Stjernetegn-sider------------------------------------------------------------------------- */
+ul#pills-tab{
+    margin: 0 !important;
+}
 .sign-image{
     margin-top: 1em;
 }
@@ -348,19 +351,57 @@ nav{
   object-fit: cover;
 }
 /* historie side-------------------------------------------------------------------------------- */
-.story-img{
-    max-width: 100%;
+.side-overview{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--black);
+    border-radius: 10px;
+    max-width: 400px;
+}
+.side-overview a{
+    margin: 0;
+    padding: 0.5em;
+    text-decoration: underline;
+    font-size: 20px;
+    
+}
+.video video{
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    max-width: 620px;
+    padding-bottom: 1em;
+}
+.accordion-header-historie{
+    padding: 0;
+    max-width: 575px;
+}
+.accordion-header-historie-lyd{
+    padding: 0;
+    max-width: 300px;
+    background-color: white;
+}
+.accordion-item-historie{
+    background-color: white;
+    max-width: 575px;
+    display:contents;    
 }
 .sagn{
-    background-color:white ;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-
+    background-color: white;
 }
 .sagn p {
-    max-width: 50ch;
+    max-width: 60ch;
+    background-color: white;
+}
+.audio-container{
+    display: flex;
+    justify-content: center;
 }
 /* Om os-side------------------------------------------------------------------------------------ */
 .kilder a{
@@ -406,13 +447,6 @@ footer a{
 }
 /* Large devices (desktops, 992px and up) ------------------------------------------------------*/
 @media (min-width: 992px){
-    /* .bamboo-baggrund{
-        background-image: url(img/bamboo-2.jpg);
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        margin: 0;
-        padding: 0;
-    } */
     .containter-fluid{
         flex-wrap: wrap;
     }
@@ -439,14 +473,4 @@ footer a{
         align-items: center;
     }
 
-}
-/* Large devices (desktops, 992px and up) ------------------------------------------------------*/
-@media (min-width: 2500px){
-    .bamboo-baggrund-big{
-        background-image: url(img/bamboo-2.jpg);
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        margin: 0;
-        padding: 0;
-    }
 }
