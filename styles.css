@@ -77,7 +77,6 @@ a{
     font-weight: 300;
     font-style: normal;
     font-size: 24px;
-    color: var(--beige) !important;
 }
 ul{
     padding-left: 0 !important;
@@ -95,6 +94,9 @@ button{
     font-size: 24px !important;
     padding: 0.2em 1.5em;
     transition: 0.5s;
+}
+button a{
+    color: var(--beige) !important;
 }
 button:hover{
     background-color: var(--dark-red) ;
