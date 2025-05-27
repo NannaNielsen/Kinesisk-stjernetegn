@@ -12,6 +12,22 @@ function scriptButton() {
     if (birthdayM < 10) birthdayM = "0" + birthdayM;
     if (birthdayD < 10) birthdayD = "0" + birthdayD;
     var birthday = birthdayY + birthdayM + birthdayD;
+    
+// Mapping af billeder til hvert stjernetegn
+    const signImages = {
+        rotten: "img/Mus-m-baggrund.png",
+        oksen: "img/Ko-m-baggrund.png",
+        tigeren: "img/Tiger-m-baggrund.png",
+        kaninen: "img/Kanin-m-baggrund.png",
+        dragen: "img/Drage-m-baggrund.png",
+        slangen: "img/Slange-m-baggrund.png",
+        hesten: "img/Hest-m-baggrund.png",
+        geden: "img/Ged-m-baggrund.png",
+        aben: "img/Abe-m-baggrund.png",
+        hanen: "img/Hane-m-baggrund.png",
+        hunden: "img/Hund-m-baggrund.png",
+        grisen: "img/Gris-m-baggrund.png"
+    };
 
     // Forkortet signs array til eksempel — indsæt dit fulde array her
     const signs = [
