@@ -241,7 +241,6 @@ function scriptButton() {
     for (let i = 0; i < signs.length; i++) {
         if (birthday >= signs[i][0]) {
             birthdaySign = signs[i][1];
-            birthdayElement = signs[i][2];
             birthdayImage = signImages[birthdaySign] || "";
             break;
         }
@@ -249,7 +248,8 @@ function scriptButton() {
 
     let resultHTML = `
         <h3 style="text-transform: capitalize;">${birthdaySign}</h3>
-        <p>Dit kinesiske stjernetegn er <strong>${birthdaySign}</strong> og dit element er <strong>${birthdayElement}</strong>.</p>
+        <p>Dit kinesiske stjernetegn er <strong>${birthdaySign}</strong>.</p>
+        <button><a href="${birthdaySign}.html">Læs mere om ${birthdaySign}</a></button>
     `;
 
     if (birthdayImage) {
