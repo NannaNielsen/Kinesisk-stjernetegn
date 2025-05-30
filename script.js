@@ -1,8 +1,32 @@
 
+// Skjuler reset-knap i stjernetegnsberegneren, når siden loades:
 window.onload = function(){
   document.getElementById("reset-button").style.display='none';
 }
 
+// Back to top-knap:
+// Finder knappen i HTML-koden:
+let mybutton = document.getElementById("topBtn");
+
+// Viser knappen, når brugeren scroller 20px ned fra toppen: 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+// Scroller til toppen af siden, når der klikkes på knappen:
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+// Stjernetegnsberegneren:
 function scriptButton() {
     var birthdayM = document.getElementById("month").value;
     var birthdayD = document.getElementById("day").value;
