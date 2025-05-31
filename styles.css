@@ -18,6 +18,7 @@ body{
 }
 img{
     margin: 0 auto;
+    padding: 1em 0;
     display: flex;
     justify-content: center;
 }
@@ -259,6 +260,11 @@ nav{
 }
 .accordion-button.collapsed{
     color: var(--black) !important;
+    transition: 0.5s;
+}
+.accordion-button.collapsed:hover{
+    color: var(--beige) !important;
+    transition: 0.5s;
 }
 .accordion-button:not(.collapsed){
     background-color: var(--base-red) !important;
@@ -304,7 +310,7 @@ nav{
 .nav-link.active img{
     filter: grayscale(0%);
 }
-/* ---------------------------------------------- */
+/* Index: ---------------------------------------------- */
 .stjernetegn{
     margin: auto;
 }
@@ -349,7 +355,7 @@ ul#pills-tab{
     display: none;
 }
 /* Items boxe--------------------------------- */
-.items-container {
+/* .items-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -364,16 +370,14 @@ ul#pills-tab{
   width: 80px;
   height: 80px;
   object-fit: cover;
-}
+} */
 /* historie side-------------------------------------------------------------------------------- */
 .side-overview{
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: var(--black);
+    max-width: 70ch;
+    margin: 0 auto;
+    background-color: white;
     border-radius: 10px;
-    max-width: 400px;
+    padding: 0.5em;
 }
 .side-overview a{
     margin: 0;
@@ -418,7 +422,7 @@ ul#pills-tab{
     justify-content: center;
 }
 /* Om os-side------------------------------------------------------------------------------------ */
-.kilder a{
+.kilder a, .indholdsfortegnelse a, .om-os a{
     font-size: 16px;
     color: var(--base-red) !important;
 }
