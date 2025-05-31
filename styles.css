@@ -1,5 +1,5 @@
 
-
+/* Variabler: */
 :root{
     /* colours */
     --black: #111111;
@@ -18,7 +18,6 @@ body{
 }
 img{
     margin: 0 auto;
-    padding: 1em 0;
     display: flex;
     justify-content: center;
 }
@@ -97,6 +96,7 @@ button{
     font-weight: 300;
     font-size: 24px !important;
     padding: 0.2em 1.5em;
+    margin: 0.5em 0 !important;
     transition: 0.5s;
 }
 button a{
@@ -131,6 +131,9 @@ nav{
 }
 .navbar{
     padding: 0 !important;
+}
+.navbar-brand{
+    display: flex;
 }
 .navbar h1{
     padding: 0;
@@ -199,7 +202,6 @@ nav{
     left: 0;
     z-index: 1;
 }
-
 .dropdown-content a, .dropdown-menu.show a {
     color: white;
     background-color: var(--black);
@@ -209,12 +211,10 @@ nav{
     text-align: left;
     cursor: pointer;
 }
-
 .dropdown-content a:hover{
     background-color: var(--base-red);
     color: var(--beige);
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -260,7 +260,9 @@ nav{
 }
 .accordion-button.collapsed{
     color: var(--black) !important;
+    border: solid 1px var(--base-red) !important;
     transition: 0.5s;
+    margin: 0 !important;
 }
 .accordion-button.collapsed:hover{
     color: var(--beige) !important;
@@ -268,6 +270,7 @@ nav{
 }
 .accordion-button:not(.collapsed){
     background-color: var(--base-red) !important;
+    border: none!important;
     border-radius: 10px 10px 0 0 !important;
 }
 .rotten-open{
@@ -275,6 +278,7 @@ nav{
 }
 .accordion-body{
     background-color: white;
+    border-radius: 0 0 10px 10px !important;
 }
 /* Stjernetegns billede linje--------------------- */
 .nav-item button{
