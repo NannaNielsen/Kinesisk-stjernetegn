@@ -366,30 +366,17 @@ ul#pills-tab{
 .lykketing p{
     text-align: center;
 }
+.lykketing-mobil{
+    display: flex;
+    justify-content: center;
+}
 /* Viser/fjerner navigation mellem mobil og desktop visning----------------------------------- */
 .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
     display: block;
 }
-.navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
+.navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop, .lykketing-1024{
     display: none;
 }
-/* Items boxe--------------------------------- */
-/* .items-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-  padding: 10px;
-  text-align: center;
-}
-.flex-item {
-  width: 100px;
-}
-.flex-item img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-} */
 /* historie side-------------------------------------------------------------------------------- */
 .side-overview{
     max-width: 70ch;
@@ -497,11 +484,11 @@ footer a{
     .navbaren.sticky-top.navbar-desktop{
         z-index: 1021;
     }
-    .navbar.sticky-top.navbar-mobil, .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil{
+    .navbar.sticky-top.navbar-mobil, .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil, .lykketing-desktop{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
         display: none; 
     }
-    .navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop{
+    .navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-1024{
         display: block;
     }
     .stjernetegn-bg{
@@ -510,4 +497,12 @@ footer a{
         align-items: center;
     }
 
+}
+@media (min-width: 1200px){
+    .lykketing-1024{
+        display: none;
+    }
+    .lykketing-desktop{
+        display: block;
+    }
 }
