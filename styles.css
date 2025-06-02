@@ -298,6 +298,11 @@ nav{
     background-color: white;
     border-radius: 0 0 10px 10px !important;
 }
+/* Stjernetegnsbillede dropdown for mobil: */
+.btn-secondary{
+    background-color: var(--base-red) !important; 
+    border: solid 1px var(--beige) !important;
+}
 /* Stjernetegns billede linje--------------------- */
 .nav-item button{
     background-color: none;
