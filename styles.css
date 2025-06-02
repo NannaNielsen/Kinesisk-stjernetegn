@@ -368,6 +368,9 @@ ul#pills-tab{
 .ord{
     font-weight: 600;
 }
+h5.ord{
+    margin-bottom: 1em !important;
+}
 .years, .ord{
     margin: 0 auto;
 }
