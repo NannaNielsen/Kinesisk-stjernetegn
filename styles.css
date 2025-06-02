@@ -234,9 +234,12 @@ nav{
     z-index: 9999;
 }
 /* Index-------------------------------------------------------------------------------------- */
-.banner{
-    background-color: var(--black);
+#lp-vid-com{
+    display: none;
 }
+/* .banner{
+    background-color: var(--black);
+} */
 .banner a{
     text-decoration: none;
     color: var(--beige);
@@ -484,11 +487,11 @@ footer a{
     .navbaren.sticky-top.navbar-desktop{
         z-index: 1021;
     }
-    .navbar.sticky-top.navbar-mobil, .navbar-mobil, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil, .lykketing-desktop{
+    .navbar.sticky-top.navbar-mobil, .navbar-mobil, #lp-vid-phone, .index-stjernetegn-mobil, .stjernetegn-mobil, .lykketing-mobil, .lykketing-desktop{
         /* Brug display for at få den til at forsvinde uden at bruge pladsen:  */
         display: none; 
     }
-    .navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-1024{
+    .navbar-desktop, #lp-vid-com, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-1024{
         display: block;
     }
     .stjernetegn-bg{
