@@ -237,9 +237,9 @@ nav{
 #lp-vid-com{
     display: none;
 }
-/* .banner{
+.banner{
     background-color: var(--black);
-} */
+}
 .banner a{
     text-decoration: none;
     color: var(--beige);
