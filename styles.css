@@ -448,12 +448,12 @@ ul#pills-tab{
     display: flex;
     justify-content: center;
 }
-/* Om os-side------------------------------------------------------------------------------------ */
-.kilder a, .indholdsfortegnelse a, .om-os a{
+.kilder a, .om-os a{
     font-size: 16px;
     color: var(--base-red) !important;
+    transition: 0.5s;
 }
-/* foother------------------------------------------------------------------------------------ */
+/* footer------------------------------------------------------------------------------------ */
 footer{
     background-color: var(--black);
     color: var(--beige);
@@ -472,6 +472,11 @@ footer a{
     text-decoration: none;
     text-decoration: underline;
     font-size: 16px;
+    transition: 0.5s;
+}
+footer a:hover{
+    color: var(--base-red);
+    transition: 0.5s;
 }
 .stjernetegn-footer{
     justify-content: left;
