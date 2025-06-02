@@ -124,6 +124,9 @@ select{
     font-weight: 300;
     font-style: normal;
 }
+audio{
+    width: 100%;
+}
 /* Navbar mobil--------------------------------------------------------------------------------------- */
 nav{
     background-color: var(--black);
@@ -275,6 +278,9 @@ nav{
 .accordion-item{
     background-color: var(--beige) !important;
     border: none !important;
+}
+button.accordion-button {
+    margin: 0 !important;
 }
 .accordion-button.collapsed{
     color: var(--black) !important;
