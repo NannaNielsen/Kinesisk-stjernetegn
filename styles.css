@@ -462,7 +462,7 @@ footer{
     color: var(--beige);
 }
 footer h5 {
-    padding: 0.5em 0;
+    padding: 1em 0 0.2em;
     text-align: left;
     font-family: "roboto", sans-serif;
 }
@@ -487,8 +487,8 @@ footer a:hover{
 .copyright{
     font-family: "roboto", sans-serif;
     font-weight: 300;
+    padding: 1em 0;
 }
-
 /* Medium devices (tablets, 768px and up)------------------------------------------------------*/
 @media (min-width: 768px){
     p{
