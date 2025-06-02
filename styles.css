@@ -399,12 +399,19 @@ ul#pills-tab{
     border-radius: 10px;
     padding: 0.5em;
 }
+.indholdsfortegnelse-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .side-overview a{
-    margin: 0;
-    padding: 0.5em;
+    margin: 0; 
+    padding: 0;
     text-decoration: underline;
     font-size: 20px;
-    
+}
+.side-overview button{
+    margin: 0.5em !important;
 }
 .video video{
     margin-left: auto;
