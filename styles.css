@@ -52,9 +52,10 @@ h3{
     font-family: "roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    text-size-adjust: 80%;
+    font-size: 18px !important;
     margin: auto !important;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 0.3em !important;
 }
 h4{
     font-family: "roboto", sans-serif;
@@ -525,6 +526,10 @@ footer a:hover{
         display: flex;
         align-items: center;
     }
+    .stjernetegn-desktop, .index-stjernetegn-desktop button{
+        padding-left: 14px;
+        padding-right: 14px;
+    }
 
 }
 @media (min-width: 1200px){
@@ -533,5 +538,9 @@ footer a:hover{
     }
     .lykketing-desktop{
         display: block;
+    }
+    .stjernetegn-desktop, .index-stjernetegn-desktop button{
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
