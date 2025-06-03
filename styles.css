@@ -349,6 +349,18 @@ button.accordion-button {
 .nav-link.active img{
     filter: grayscale(0%);
 }
+#answer{
+    background-color: var(--beige);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 2em 0;
+}
+#answer h2{
+    padding: 0;
+}
+#answer p{
+    margin: 0;
+}
 .stjernetegn{
     margin: auto;
 }
@@ -400,13 +412,6 @@ h5.ord{
     display: none;
 }
 /* historie side-------------------------------------------------------------------------------- */
-/* .side-overview{
-    max-width: 70ch;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 10px;
-    padding: 0.5em;
-} */
 .indholdsfortegnelse-buttons{
     display: flex;
     flex-wrap: wrap;

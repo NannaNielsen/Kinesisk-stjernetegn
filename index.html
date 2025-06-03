@@ -45,7 +45,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
-            src="img/logo-dark.png"
+            src="img/logo.png"
             alt="Logo"
             width="50"
             height="50"
@@ -152,6 +152,75 @@
       </div>
     </div>
     <span class="anchor" id="index-content"></span>
+    <span class="anchor" id="index-beregner"></span>
+    <div class="stjernetegn-bg">
+      <div class="container text-center">
+        <!-- find stjernetegn -->
+        <div class="row align-items-center">
+          <div class="col-12">
+            <h2>Find dit kinesiske stjernetegn</h2>
+            <form>
+              <h4>Indtast din fødselsdag:</h4>
+              <select id="day">
+                <optgroup class="form-options"></optgroup>
+
+                <script>
+                  var startDay = 1;
+                  var endDay = 31;
+                  var optionsDay = "";
+                  for (var d = startDay; d <= endDay; d++) {
+                    optionsDay += "<option>" + d + "</option>";
+                  }
+                  document.getElementById("day").innerHTML = optionsDay;
+                </script>
+              </select>
+              <select name="" id="month">
+                <optgroup class="form-options">
+                  <option value="1">Januar</option>
+                  <option value="2">Februar</option>
+                  <option value="3">Marts</option>
+                  <option value="4">April</option>
+                  <option value="5">Maj</option>
+                  <option value="6">Juni</option>
+                  <option value="7">Juli</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">Oktober</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </optgroup>
+              </select>
+              <select id="year">
+                <optgroup class="form-options"></optgroup>
+              </select>
+              <script>
+                var startYear = 1900;
+                var endYear = new Date().getFullYear();
+                //var endYear = 2099;
+                var optionsYear = "";
+                for (var y = endYear; y >= startYear; y--) {
+                  optionsYear += "<option>" + y + "</option>";
+                }
+                document.getElementById("year").innerHTML = optionsYear;
+              </script>
+              <br />
+              <button type="button" onclick="scriptButton()">
+                Find dit kinesiske stjernetegn
+              </button>
+              <p id="answer"></p>
+              <button
+                id="reset-button"
+                type="reset"
+                value="Reset"
+                onclick="resetSign()"
+              >
+                Nulstil
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container stjernetegn">
       <div class="row">
         <div class="col-12">
@@ -1193,71 +1262,21 @@
         </div>
       </div>
     </div>
-    <span class="anchor" id="index-beregner"></span>
-    <div class="stjernetegn-bg">
+    <div class="sagn-bg">
       <div class="container text-center">
-        <!-- find stjernetegn -->
+        <!-- Sagnet om tegnene -->
         <div class="row align-items-center">
-          <div class="col-12">
-            <h2>Find dit kinesiske stjernetegn</h2>
-            <form>
-              <h4>Indtast din fødselsdag:</h4>
-              <select id="day">
-                <optgroup class="form-options"></optgroup>
-
-                <script>
-                  var startDay = 1;
-                  var endDay = 31;
-                  var optionsDay = "";
-                  for (var d = startDay; d <= endDay; d++) {
-                    optionsDay += "<option>" + d + "</option>";
-                  }
-                  document.getElementById("day").innerHTML = optionsDay;
-                </script>
-              </select>
-              <select name="" id="month">
-                <optgroup class="form-options">
-                  <option value="1">Januar</option>
-                  <option value="2">Februar</option>
-                  <option value="3">Marts</option>
-                  <option value="4">April</option>
-                  <option value="5">Maj</option>
-                  <option value="6">Juni</option>
-                  <option value="7">Juli</option>
-                  <option value="8">August</option>
-                  <option value="9">September</option>
-                  <option value="10">Oktober</option>
-                  <option value="11">November</option>
-                  <option value="12">December</option>
-                </optgroup>
-              </select>
-              <select id="year">
-                <optgroup class="form-options"></optgroup>
-              </select>
-              <script>
-                var startYear = 1900;
-                var endYear = new Date().getFullYear();
-                //var endYear = 2099;
-                var optionsYear = "";
-                for (var y = endYear; y >= startYear; y--) {
-                  optionsYear += "<option>" + y + "</option>";
-                }
-                document.getElementById("year").innerHTML = optionsYear;
-              </script>
-              <br />
-              <button type="button" onclick="scriptButton()">
-                Find dit kinesiske stjernetegn
-              </button>
-              <p id="answer"></p>
-              <button
-                id="reset-button"
-                type="reset"
-                value="Reset"
-                onclick="resetSign()"
-              >
-                Nulstil
-              </button>
-            </form>
+          <div class="col-sm-12 col-lg-6">
+            <h2>Historien om de kinesiske stjernetegn</h2>
+            <p>
+              Vidste du, at der er et gammelt sagn forbundet med de kinesiske
+              stjernetegn? Læs denne og meget mere om historien bag de kinesiske
+              stjernetegn her.
+            </p>
+            <button><a href="historie.html">Læs mere</a></button>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <img src="img/jadekejser.png" alt="jadekejser" class="img-fluid" />
           </div>
         </div>
       </div>
@@ -1282,25 +1301,6 @@
             reflektere over dine mål og genfind dig selv.
           </p>
           <button><a href="slangen.html">Læs mere om slangen</a></button>
-        </div>
-      </div>
-    </div>
-    <div class="sagn-bg">
-      <div class="container text-center">
-        <!-- Sagnet om tegnene -->
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-lg-6">
-            <h2>Sagnet om de kinesiske stjernetegn</h2>
-            <p>
-              Vidste du, at der er et gammelt sagn forbundet med de kinesiske
-              stjernetegn? Læs denne og meget mere om historien bag de kinesiske
-              stjernetegn her.
-            </p>
-            <button><a href="historie.html">Læs mere</a></button>
-          </div>
-          <div class="col-sm-12 col-lg-6">
-            <img src="img/jadekejser.png" alt="jadekejser" class="img-fluid" />
-          </div>
         </div>
       </div>
     </div>
@@ -1344,7 +1344,7 @@
             class="col-12 col-lg-2 d-flex flex-wrap align-items-center footer-logo-desktop"
           >
             <img
-              src="img/logo-dark.png"
+              src="img/logo.png"
               alt=""
               height="150px"
               width="150px"
