@@ -231,12 +231,19 @@ nav{
     text-decoration-thickness: 2px !important;
 }
 /* Back to top-knap-------------------------------------------------------------------------- */
-.topBtn{
-    /* display: none; skjules med det samme */
-    position: fixed; 
-    bottom: 20px;
-    right: 30px;
-    z-index: 9999;
+.topBtn {
+  opacity: 0; /* Skjuler knappen med det samme */
+  visibility: hidden; /* Skjuler knappen med det samme */
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  position: fixed; /* Beholder knappen på samme plads */
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+}
+/* Når klassen "show" tilføjes "topBtn" bliver denne synlig: */
+.topBtn.show {
+  opacity: 1;
+  visibility: visible;
 }
 /* Index-------------------------------------------------------------------------------------- */
 #lp-vid-com{

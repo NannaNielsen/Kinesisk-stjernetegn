@@ -5,40 +5,44 @@ window.onload = function(){
 }
 
 // Back to top-knap:
-// Finder knappen i HTML-koden:
-let mybutton = document.getElementsByClassName("topBtn");
+// Finder knappen "topBtn" i HTML-koden og putter det i en variabel "myButton":
+let mybutton = document.querySelector(".topBtn"); // Brug querySelector for ét element, da den finder første matchende element. Vi skal ikke finde flere
 
+// Sætter event-listener op, der kører funktionen "scrollFunction()" hver gang brugeren scroller ned på siden: 
+window.onscroll = function() {
+  scrollFunction();
+};
 
-// Viser knappen, når brugeren scroller 20px ned fra toppen: 
-window.onscroll = function() {scrollFunction()};
-
+// Funktion "scrollFunktion()", der viser/skjuler knappen, når brugeren scroller 20px ned fra toppen:
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.classList.add("show");
+  } else {
+    mybutton.classList.remove("show");
+  }
 }
-// Scroller til toppen af siden, når der klikkes på knappen:
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+// Tjekker hvor langt brugeren har scrollet ned på siden. Hvis det er mere end 20px, tilføjer den klassen "show" til "topBtn", der gør den synlig. Hvis ikke, fjernes klassen "show". Husk "||" = "eller"
 
+// Scroller til toppen af siden, når knappen "topBtn" klikkes på:
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 
 // Stjernetegnsberegneren:
+// Definerer en funktion "scriptButton() der triggers, når brugeren klikker på knappen "Find dit stjernetegn. Her får vi de udvalgte dag, måned og år-værdier:
 function scriptButton() {
     var birthdayM = document.getElementById("month").value;
     var birthdayD = document.getElementById("day").value;
     var birthdayY = document.getElementById("year").value;
 
-    // Formater datoen til YYYYMMDD:
+    // Formater datoen til YYYYMMDD (en enkel string):
     if (birthdayM < 10) birthdayM = "0" + birthdayM;
     if (birthdayD < 10) birthdayD = "0" + birthdayD;
     var birthday = birthdayY + birthdayM + birthdayD;
     
-// Mapping af billeder til hvert stjernetegn
+// Mapping af billeder til hvert stjernetegn:
     const signImages = {
         rotten: "img/Mus-m-baggrund.png",
         oksen: "img/Ko-m-baggrund.png",
@@ -54,7 +58,7 @@ function scriptButton() {
         grisen: "img/Gris-m-baggrund.png"
     };
 
-    // Forkortet signs array til eksempel — indsæt dit fulde array her
+    // Definerer et array "signs". Værdier i faldende sortering med dage og deres korresponderende kinesiske stjernetegn. Finder første stjernetegn, hvor fødselsdagen er større end eller lig med dagen. Array fundet på Stack Overflow:
     const signs = [
         ["20990121", "geden"],
         ["20980201", "hesten"],
@@ -259,9 +263,11 @@ function scriptButton() {
         ["19000000", "grisen"],
     ];
 
+    // Definerer variabler, til at opbevare resultatet fra stjernetegnet og billedet:
     let birthdaySign = "";
     let birthdayImage = "";
 
+    // For-lykke, der går igennem arrayet "signs" og finder det første matchende element, hvor fødselsdagen er efter tærsklen. Herefter finder den stjernetegnet og billedet:
     for (let i = 0; i < signs.length; i++) {
         if (birthday >= signs[i][0]) {
             birthdaySign = signs[i][1];
@@ -270,19 +276,25 @@ function scriptButton() {
         }
     }
 
+    // Den HTML der vises med resultatet:
     let resultHTML = `
         <h2 style="text-transform: capitalize;">${birthdaySign}</h2>
         <p>Dit kinesiske stjernetegn er <strong>${birthdaySign}</strong>.</p>
         <button><a href="${birthdaySign}.html">Læs mere</a></button>
     `;
 
+    // Hvis et billed ikke kan findes, tilføjer den et "img"-tag til resultatet:
     if (birthdayImage) {
         resultHTML += `<img src="${birthdayImage}" alt="${birthdaySign}" style="max-width:300px;margin:0 auto; display:block;">`;
     }
 
+    // Viser resultatet i #answer-elementet:
     document.getElementById("answer").innerHTML = resultHTML;
+
+    // Gør reset-knappen synlig:
     document.getElementById("reset-button").style.display='inline';
 }
+// Funktion "resetSign()" der rydder resultatet og gør "nulstil"-knappen usynlig:
 function resetSign() {
     document.getElementById("answer").innerHTML = "";
     document.getElementById("reset-button").style.display='none';
