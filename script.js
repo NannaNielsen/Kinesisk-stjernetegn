@@ -6,7 +6,8 @@ window.onload = function(){
 
 // Back to top-knap:
 // Finder knappen i HTML-koden:
-let mybutton = document.getElementById("topBtn");
+let mybutton = document.getElementsByClassName("topBtn");
+
 
 // Viser knappen, når brugeren scroller 20px ned fra toppen: 
 window.onscroll = function() {scrollFunction()};

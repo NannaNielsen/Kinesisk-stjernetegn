@@ -231,8 +231,8 @@ nav{
     text-decoration-thickness: 2px !important;
 }
 /* Back to top-knap-------------------------------------------------------------------------- */
-#topBtn{
-    display: none; /* skjules med det samme */
+.topBtn{
+    /* display: none; skjules med det samme */
     position: fixed; 
     bottom: 20px;
     right: 30px;
