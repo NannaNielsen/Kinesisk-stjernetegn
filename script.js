@@ -2,7 +2,6 @@
 // Skjuler reset-knap i stjernetegnsberegneren, når siden loades:
 window.onload = function(){
   document.getElementById("reset-button").style.display='none';
-  document.getElementById("answer").style.display='none';
 }
 
 // Back to top-knap:
@@ -281,7 +280,6 @@ function scriptButton() {
     }
 
     document.getElementById("answer").innerHTML = resultHTML;
-    document.getElementById("answer").style.display='none';
     document.getElementById("reset-button").style.display='inline';
 }
 function resetSign() {
