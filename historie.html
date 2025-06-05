@@ -6,7 +6,7 @@
     <title>K-Astro</title>
 
     <!-- Favicon: -->
-    <link rel="icon" type="image" href="img/logo.png" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
 
     <!-- Meta beskrivelse: -->
     <meta
@@ -53,7 +53,7 @@
           />
           <h1>K-Astro</h1>
         </a>
-        <a
+        <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -63,7 +63,7 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </a>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -144,10 +144,10 @@
           <!-- side overview -->
           <div class="indholdsfortegnelse side-overview">
             <div class="indholdsfortegnelse-buttons">
-              <a href="historie.html#hvad"><button>Hvad er det?</button></a>
-              <a href="historie.html#sagn"> <button>Sagn</button></a>
-              <a href="historie.html#nytår"><button>Kinesisk Nytår</button></a>
-              <a href="historie.html#kilder"><button>Kilder</button></a>
+              <button onclick="window.location.href='/historie.html#hvad'">Hvad er det?</button>
+              <button onclick="window.location.href='/historie.html#sagn'">Sagn</button>
+              <button onclick="window.location.href='/historie.html#nytår'">Kinesisk Nytår</button>
+              <button onclick="window.location.href='/historie.html#kilder'">Kilder</button>
             </div>
           </div>
         </div>
@@ -217,7 +217,7 @@
           </p>
           <!-- Video -->
           <div class="video">
-            <video controls poster="img/ræs.png" alt="Blæk illustration af det det store ræs med jadekejseren og de kinesiske stjernetegn rotten, katten, oksen, tigeren, kaninen, dragen, slangen, hesten, geden, aben, hanen, hunden og grisen" class="img-fluid">
+            <video controls poster="img/ræs.png" class="img-fluid">
               <source
                 class="embed-responsive-item"
                 src="media/video-historie.mp4"
@@ -246,7 +246,7 @@
                   <div class="sagn">
                     <!-- oplæsning af sagnet -->
                     <p><i>Få historien læst højt</i>:</p>
-                    <audio controls controlsList="nodownload">
+                    <audio controls>
                       <source src="media/oplæsning-historie.mp3" />
                       <!-- Tekst hvis filen ikke kan afspilles -->
                       Din browser understøtter ikke vores lydformat.
@@ -417,7 +417,6 @@
             class="mb-4 story-img img-fluid"
             src="img/nytår.png"
             alt="Blæk illustration af kinesisk nytår, lanterner, fyrværkeri og gren med kirsebærblomster"
-            class="img-fluid"
           />
         </div>
       </div>
@@ -513,8 +512,8 @@
             <img
               src="img/logo.png"
               alt="K-Astro logo"
-              height="150px"
-              width="150px"
+              height="150"
+              width="150"
               class="img-fluid"
             />
           </div>
