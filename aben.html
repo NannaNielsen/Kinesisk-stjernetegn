@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>K-Astro</title>
-        
-        <!-- Favicon: -->
-        <link rel="icon" type="image" href="img/logo.png">
-        
-        <!-- Meta beskrivelse: -->
-        <meta name="description" content="Lær om det kinesiske stjernetegn aben og hvordan den adskiller sig fra de andre kinesiske stjernetegn. ">
-        
-        <!-- Stylesheet -->
-        <link rel="stylesheet" href="styles.css">
-        
-        <!-- Skrifttyper -->
-        <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
-        <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
-        
-        <!-- Bootstrap, Popper og JS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Astro</title>
+
+    <!-- Favicon: -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
+    <!-- Meta beskrivelse: -->
+    <meta
+      name="description"
+      content="Lær om det kinesiske stjernetegn aben og hvordan den adskiller sig fra de andre kinesiske stjernetegn. "
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Skrifttyper -->
+    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css" />
+
+    <!-- Bootstrap, Popper og JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- Navbar mobil -->
     <nav class="navbar navbar-dark sticky-top navbar-mobil">
       <div class="container-fluid">
@@ -69,10 +84,16 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="rotten.html">Rotten</a></li>
                 <li><a class="dropdown-item" href="oksen.html">Oksen</a></li>
-                <li><a class="dropdown-item" href="tigeren.html">Tigeren</a></li>
-                <li><a class="dropdown-item" href="kaninen.html">Kaninen</a></li>
+                <li>
+                  <a class="dropdown-item" href="tigeren.html">Tigeren</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kaninen.html">Kaninen</a>
+                </li>
                 <li><a class="dropdown-item" href="dragen.html">Dragen</a></li>
-                <li><a class="dropdown-item" href="slangen.html">Slangen</a></li>
+                <li>
+                  <a class="dropdown-item" href="slangen.html">Slangen</a>
+                </li>
                 <li><a class="dropdown-item" href="hesten.html">Hesten</a></li>
                 <li><a class="dropdown-item" href="geden.html">Geden</a></li>
                 <li><a class="dropdown-item" href="aben.html">Aben</a></li>
@@ -120,254 +141,503 @@
         <a href="om-os.html">OM OS</a>
       </div>
     </div>
-        <!-- Back to top-knap: -->
+    <!-- Back to top-knap: -->
     <button onclick="topFunction()" class="topBtn">▲</button>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h1>Kinesiske stjernetegn</h1>
-                    <!-- Vælg stjernetegn mobil:-->
-                    <div class="stjernetegn-mobil">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Aben
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="rotten.html">Rotten</a></li>
-                                <li><a class="dropdown-item" href="oksen.html">Oksen</a></li>
-                                <li><a class="dropdown-item" href="tigeren.html">Tigeren</a></li>
-                                <li><a class="dropdown-item" href="kaninen.html">Kaninen</a></li>
-                                <li><a class="dropdown-item" href="dragen.html">Dragen</a></li>
-                                <li><a class="dropdown-item" href="slangen.html">Slangen</a></li>
-                                <li><a class="dropdown-item" href="hesten.html">Hesten</a></li>
-                                <li><a class="dropdown-item" href="geden.html">Geden</a></li>
-                                <li><a class="dropdown-item" href="hanen.html">Hanen</a></li>
-                                <li><a class="dropdown-item" href="hunden.html">Hunden</a></li>
-                                <li><a class="dropdown-item" href="grisen.html">Grisen</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Vælg stjernetegn desktop-->
-                    <div class="stjernetegn-desktop">
-                        <ul class="nav nav-pills mb-3 sticky-top" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a href="rotten.html"><button class="nav-link" id="pills-rotten-tab" data-bs-toggle="pill" data-bs-target="#pills-rotten" type="button" role="tab" aria-controls="pills-rotten" aria-selected="true">
-                                    <img src="img/Mus-outline.png" alt="Blæk illustration af det kinesiske stjernetegn rotten">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="oksen.html"><button class="nav-link" id="pills-oksen-tab" data-bs-toggle="pill" data-bs-target="#pills-oksen" type="button" role="tab" aria-controls="pills-oksen" aria-selected="false">
-                                    <img src="img/Ko-outline.png" alt="Blæk illustration af det kinesiske stjernetegn oksen">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="tigeren.html"><button class="nav-link" id="pills-tigeren-tab" data-bs-toggle="pill" data-bs-target="#pills-tigeren" type="button" role="tab" aria-controls="pills-tigeren" aria-selected="false">
-                                    <img src="img/Tiger-outline.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="kaninen.html"><button class="nav-link" id="pills-kaninen-tab" data-bs-toggle="pill" data-bs-target="#pills-kaninen" type="button" role="tab" aria-controls="pills-kaninen" aria-selected="false">
-                                    <img src="img/Kanin-outline.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="dragen.html"><button class="nav-link" id="pills-dragen-tab" data-bs-toggle="pill" data-bs-target="#pills-dragen" type="button" role="tab" aria-controls="pills-dragen" aria-selected="false">
-                                    <img src="img/Drage-outline.png" alt="Blæk illustration af det kinesiske stjernetegn dragen">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="slangen.html"><button class="nav-link" id="pills-slangen-tab" data-bs-toggle="pill" data-bs-target="#pills-slangen" type="button" role="tab" aria-controls="pills-slangen" aria-selected="false">
-                                    <img src="img/Slange-outline.png" alt="Blæk illustration af det kinesiske stjernetegn slangen">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="hesten.html"><button class="nav-link" id="pills-hesten-tab" data-bs-toggle="pill" data-bs-target="#pills-hesten" type="button" role="tab" aria-controls="pills-hesten" aria-selected="false">
-                                    <img src="img/Hest-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hesten">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="geden.html"><button class="nav-link" id="pills-geden-tab" data-bs-toggle="pill" data-bs-target="#pills-geden" type="button" role="tab" aria-controls="pills-geden" aria-selected="false">
-                                    <img src="img/Ged-outline.png" alt="Blæk illustration af det kinesiske stjernetegn geden">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link aktiv" id="pills-aben-tab" data-bs-toggle="pill" data-bs-target="#pills-aben" type="button" role="tab" aria-controls="pills-aben" aria-selected="false">
-                                    <img src="img/Abe-outline.png" alt="Blæk illustration af det kinesiske stjernetegn aben">
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="hanen.html"><button class="nav-link" id="pills-hanen-tab" data-bs-toggle="pill" data-bs-target="#pills-hanen" type="button" role="tab" aria-controls="pills-hanen" aria-selected="false">
-                                    <img src="img/Hane-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hanen">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="hunden.html"><button class="nav-link" id="pills-hunden-tab" data-bs-toggle="pill" data-bs-target="#pills-hunden" type="button" role="tab" aria-controls="pills-hunden" aria-selected="false">
-                                    <img src="img/Hund-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hunden">
-                                </button></a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a href="grisen.html"><button class="nav-link" id="pills-grisen-tab" data-bs-toggle="pill" data-bs-target="#pills-grisen" type="button" role="tab" aria-controls="pills-grisen" aria-selected="false">
-                                    <img src="img/Gris-outline.png" alt="Blæk illustration af det kinesiske stjernetegn grisen">
-                                </button></a>
-                            </li>
-                        </ul>
-                        <div class="underline line"></div>
-                    </div>
-                </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1>Kinesiske stjernetegn</h1>
+          <!-- Vælg stjernetegn mobil:-->
+          <div class="stjernetegn-mobil">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Aben
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="rotten.html">Rotten</a></li>
+                <li><a class="dropdown-item" href="oksen.html">Oksen</a></li>
+                <li>
+                  <a class="dropdown-item" href="tigeren.html">Tigeren</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kaninen.html">Kaninen</a>
+                </li>
+                <li><a class="dropdown-item" href="dragen.html">Dragen</a></li>
+                <li>
+                  <a class="dropdown-item" href="slangen.html">Slangen</a>
+                </li>
+                <li><a class="dropdown-item" href="hesten.html">Hesten</a></li>
+                <li><a class="dropdown-item" href="geden.html">Geden</a></li>
+                <li><a class="dropdown-item" href="hanen.html">Hanen</a></li>
+                <li><a class="dropdown-item" href="hunden.html">Hunden</a></li>
+                <li><a class="dropdown-item" href="grisen.html">Grisen</a></li>
+              </ul>
             </div>
-            <!-- Lykketing -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src="img/Abe-m-baggrund.png" alt="Blæk illustration af det kinesiske stjernetegn aben" class="img-fluid sign-image">
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <h1>Aben</h1>
-                        <h4 class="ord">Observante • Innovative • Aktive</h4>
-                        <h3 class="years">1956 • 1968 • 1980 • 1992 • 2004 • 2016 • 2028 • 2040</h3>
-                        <div class="container text-center lykketing-mobil">
-                            <div class="row lykketing">
-                                <div class="col-4">
-                                    <h6>Rækkefølge</h6>
-                                    <img src="img/position-9.png" alt="Tallet ni" class="img-fluid">
-                                    <p>Position</p>
-                                </div>
-                                <div class="col-4">
-                                    <h6>Polaritet</h6>
-                                    <img src="img/yang.png" alt="Yang-delen i yin og yang" class="img-fluid">
-                                    <p>Yang</p>
-                                </div>
-                                <div class="col-4">
-                                    <h6>Element</h6>
-                                    <img src="img/metal.png" alt="En metalbar for elementet metal" class="img-fluid">
-                                    <p>Metal</p>
-                                </div>
-                                <div class="col-4">
-                                    <h6>Lykkeblomst</h6>
-                                    <img src="img/flower.png" alt="En blomst" class="img-fluid">
-                                    <p>Okseøje</p>
-                                </div>
-                                <div class="col-4">
-                                    <h6>Lykkefarve</h6>
-                                    <img src="img/farve-hvid.png" alt="Farven hvid i en cirkel" class="img-fluid">
-                                    <p>Hvid</p>
-                                </div>
-                                <div class="col-4">
-                                    <h6>Lykketal</h6>
-                                    <img src="img/position-3.png" alt="Tallet tre" class="img-fluid">
-                                    <p>Tre</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            Aben er det niende kinesiske stjernetegn. 
-                            <br>
-                            Personer født i abens år er intelligente, innovative og kreative. De er gode til at tilpasse sig forandringer eller nye grupper mennesker, men kan være overbeviste om at de ikke har brug for andre. De bliver set som muntre spøgefugle, som har muligheden for at opnå deres drømme hvis de sætter deres ambition og energi i det.
-                        </p>
-                        <p>
-                            Passer bedst med: Rotte, drage og slange. 
-                            <br>
-                            Passer mindst med: Tiger og gris.
-                        </p>
-                        <div class="container text-center lykketing-desktop">
-                            <div class="row lykketing">
-                                <div class="col-2">
-                                    <h6>Rækkefølge</h6>
-                                    <img src="img/position-9.png" alt="Tallet ni" class="img-fluid">
-                                    <p>Position</p>
-                                </div>
-                                <div class="col-2">
-                                    <h6>Polaritet</h6>
-                                    <img src="img/yang.png" alt="Yang-delen i yin og yang" class="img-fluid">
-                                    <p>Yang</p>
-                                </div>
-                                <div class="col-4 col-sm-2">
-                                    <h6>Element</h6>
-                                    <img src="img/metal.png" alt="En metalbar for elementet metal" class="img-fluid">
-                                    <p>Metal</p>
-                                </div>
-                                <div class="col-4 col-sm-2">
-                                    <h6>Lykkeblomst</h6>
-                                    <img src="img/flower.png" alt="En blomst" class="img-fluid">
-                                    <p>Okseøje</p>
-                                </div>
-                                <div class="col-4 col-sm-2">
-                                    <h6>Lykkefarve</h6>
-                                    <img src="img/farve-hvid.png" alt="Farven hvid i en cirkel" class="img-fluid">
-                                    <p>Hvid</p>
-                                </div>
-                                <div class="col-4 col-sm-2">
-                                    <h6>Lykketal</h6>
-                                    <img src="img/position-3.png" alt="Tallet tre" class="img-fluid">
-                                    <p>Tre</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 1024 view - icons rækkefølge -->
-                <div class="container text-center lykketing-1024">
-                    <div class="row lykketing">
-                        <div class="col-2">
-                            <h6>Rækkefølge</h6>
-                            <img src="img/position-9.png" alt="Tallet ni" class="img-fluid">
-                            <p>Position</p>
-                        </div>
-                        <div class="col-2">
-                            <h6>Polaritet</h6>
-                            <img src="img/yang.png" alt="Yang-delen i yin og yang" class="img-fluid">
-                            <p>Yang</p>
-                        </div>
-                        <div class="col-4 col-sm-2">
-                            <h6>Element</h6>
-                            <img src="img/metal.png" alt="En metalbar for elementet metal" class="img-fluid">
-                            <p>Metal</p>
-                        </div>
-                        <div class="col-4 col-sm-2">
-                            <h6>Lykkeblomst</h6>
-                            <img src="img/flower.png" alt="En blomst" class="img-fluid">
-                            <p>Okseøje</p>
-                        </div>
-                        <div class="col-4 col-sm-2">
-                            <h6>Lykkefarve</h6>
-                            <img src="img/farve-hvid.png" alt="Farven hvid i en cirkel" class="img-fluid">
-                            <p>Hvid</p>
-                        </div>
-                        <div class="col-4 col-sm-2">
-                            <h6>Lykketal</h6>
-                            <img src="img/position-3.png" alt="Tallet tre" class="img-fluid">
-                            <p>Tre</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="underline line mt-4"></div>
-            <div class="row mb-4">
-                <div class="col-12">
-                    <div>
-                        <h2>Personlighed</h2>
-                        <p>
-                            Personer født i abens år er kreative af natur og kommer ofte med innovative ideer. Aben kan være uforudsigelig, så man ved aldrig, hvad man kan forvente fra dem. 
-                            <br>
-                            Aber er sociale personer, og bliver rastløse hvis de efterlades alene i længere tid af gangen. Derfor har de brug for at sparre sig med andre, især når deres kreativitet får lov til at flyde. De er observante og bider mærke i selv de mindste ændringer.
-                        </p>
-                        <h2>Styrker</h2>
-                        <p>
-                            Aben er meget talentfuld og besidder et skarpt sind, som man sjældent ser hos andre. De er aktive, energiske og sociale, hvor de kan integrere sig i hvilken som helst gruppe uden anstrengelse. 
-                            <br>
-                            Aben er sjov at være sammen med og er gode til at tilpasse sig, når forandring sker. 
-                        </p>
-                        <h2>Svagheder</h2>
-                        <p>
-                            På grund af deres skarpe intellekt og kolde facts kan aben blive forvekslet som nedladende eller ufølsom. De kan være utålmodige med alt, der kræver en stærk indsats. 
-                            <br>
-                            Aben tror ofte at de kan klare sig bedre end andre, og ikke bruge andres hjælp. Hvis de kan overkomme dette, vil deres personlighed få lov til at skinne uden større forhindringer
-                        </p>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <!-- Vælg stjernetegn desktop-->
+          <div class="stjernetegn-desktop">
+            <ul
+              class="nav nav-pills mb-3 sticky-top"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                    onclick="window.location.href='/rotten.html'"
+                    class="nav-link"
+                    id="pills-rotten-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-rotten"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-rotten"
+                    aria-selected="true"
+                  >
+                    <img
+                      src="img/Mus-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn rotten"
+                    ></button
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  onclick="window.location.href='/grisen.html'"
+                    class="nav-link"
+                    id="pills-oksen-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-oksen"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-oksen"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Ko-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn oksen"
+                    /></button
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="tigeren.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-tigeren-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-tigeren"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-tigeren"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Tiger-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn tigeren"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="kaninen.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-kaninen-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-kaninen"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-kaninen"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Kanin-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn kaninen"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="dragen.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-dragen-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-dragen"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-dragen"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Drage-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn dragen"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="slangen.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-slangen-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-slangen"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-slangen"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Slange-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn slangen"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="hesten.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-hesten-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-hesten"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-hesten"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Hest-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn hesten"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="geden.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-geden-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-geden"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-geden"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Ged-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn geden"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link aktiv"
+                  id="pills-aben-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-aben"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-aben"
+                  aria-selected="false"
+                >
+                  <img
+                    src="img/Abe-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn aben"
+                  />
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="hanen.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-hanen-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-hanen"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-hanen"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Hane-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn hanen"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="hunden.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-hunden-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-hunden"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-hunden"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Hund-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn hunden"
+                    /></button
+                ></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="grisen.html"
+                  ><button
+                    class="nav-link"
+                    id="pills-grisen-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-grisen"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-grisen"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="img/Gris-outline.png"
+                      alt="Blæk illustration af det kinesiske stjernetegn grisen"
+                    /></button
+                ></a>
+              </li>
+            </ul>
+            <div class="underline line"></div>
+          </div>
         </div>
-        <footer>
+      </div>
+      <!-- Lykketing -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <img
+              src="img/Abe-m-baggrund.png"
+              alt="Blæk illustration af det kinesiske stjernetegn aben"
+              class="img-fluid sign-image"
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <h1>Aben</h1>
+            <h4 class="ord">Observante • Innovative • Aktive</h4>
+            <h3 class="years">
+              1956 • 1968 • 1980 • 1992 • 2004 • 2016 • 2028 • 2040
+            </h3>
+            <div class="container text-center lykketing-mobil">
+              <div class="row lykketing">
+                <div class="col-4">
+                  <h6>Rækkefølge</h6>
+                  <img
+                    src="img/position-9.png"
+                    alt="Tallet ni"
+                    class="img-fluid"
+                  />
+                  <p>Position</p>
+                </div>
+                <div class="col-4">
+                  <h6>Polaritet</h6>
+                  <img
+                    src="img/yang.png"
+                    alt="Yang-delen i yin og yang"
+                    class="img-fluid"
+                  />
+                  <p>Yang</p>
+                </div>
+                <div class="col-4">
+                  <h6>Element</h6>
+                  <img
+                    src="img/metal.png"
+                    alt="En metalbar for elementet metal"
+                    class="img-fluid"
+                  />
+                  <p>Metal</p>
+                </div>
+                <div class="col-4">
+                  <h6>Lykkeblomst</h6>
+                  <img src="img/flower.png" alt="En blomst" class="img-fluid" />
+                  <p>Okseøje</p>
+                </div>
+                <div class="col-4">
+                  <h6>Lykkefarve</h6>
+                  <img
+                    src="img/farve-hvid.png"
+                    alt="Farven hvid i en cirkel"
+                    class="img-fluid"
+                  />
+                  <p>Hvid</p>
+                </div>
+                <div class="col-4">
+                  <h6>Lykketal</h6>
+                  <img
+                    src="img/position-3.png"
+                    alt="Tallet tre"
+                    class="img-fluid"
+                  />
+                  <p>Tre</p>
+                </div>
+              </div>
+            </div>
+            <p>
+              Aben er det niende kinesiske stjernetegn.
+              <br />
+              Personer født i abens år er intelligente, innovative og kreative.
+              De er gode til at tilpasse sig forandringer eller nye grupper
+              mennesker, men kan være overbeviste om at de ikke har brug for
+              andre. De bliver set som muntre spøgefugle, som har muligheden for
+              at opnå deres drømme hvis de sætter deres ambition og energi i
+              det.
+            </p>
+            <p>
+              Passer bedst med: Rotte, drage og slange.
+              <br />
+              Passer mindst med: Tiger og gris.
+            </p>
+            <div class="container text-center lykketing-desktop">
+              <div class="row lykketing">
+                <div class="col-2">
+                  <h6>Rækkefølge</h6>
+                  <img
+                    src="img/position-9.png"
+                    alt="Tallet ni"
+                    class="img-fluid"
+                  />
+                  <p>Position</p>
+                </div>
+                <div class="col-2">
+                  <h6>Polaritet</h6>
+                  <img
+                    src="img/yang.png"
+                    alt="Yang-delen i yin og yang"
+                    class="img-fluid"
+                  />
+                  <p>Yang</p>
+                </div>
+                <div class="col-4 col-sm-2">
+                  <h6>Element</h6>
+                  <img
+                    src="img/metal.png"
+                    alt="En metalbar for elementet metal"
+                    class="img-fluid"
+                  />
+                  <p>Metal</p>
+                </div>
+                <div class="col-4 col-sm-2">
+                  <h6>Lykkeblomst</h6>
+                  <img src="img/flower.png" alt="En blomst" class="img-fluid" />
+                  <p>Okseøje</p>
+                </div>
+                <div class="col-4 col-sm-2">
+                  <h6>Lykkefarve</h6>
+                  <img
+                    src="img/farve-hvid.png"
+                    alt="Farven hvid i en cirkel"
+                    class="img-fluid"
+                  />
+                  <p>Hvid</p>
+                </div>
+                <div class="col-4 col-sm-2">
+                  <h6>Lykketal</h6>
+                  <img
+                    src="img/position-3.png"
+                    alt="Tallet tre"
+                    class="img-fluid"
+                  />
+                  <p>Tre</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1024 view - icons rækkefølge -->
+        <div class="container text-center lykketing-1024">
+          <div class="row lykketing">
+            <div class="col-2">
+              <h6>Rækkefølge</h6>
+              <img src="img/position-9.png" alt="Tallet ni" class="img-fluid" />
+              <p>Position</p>
+            </div>
+            <div class="col-2">
+              <h6>Polaritet</h6>
+              <img
+                src="img/yang.png"
+                alt="Yang-delen i yin og yang"
+                class="img-fluid"
+              />
+              <p>Yang</p>
+            </div>
+            <div class="col-4 col-sm-2">
+              <h6>Element</h6>
+              <img
+                src="img/metal.png"
+                alt="En metalbar for elementet metal"
+                class="img-fluid"
+              />
+              <p>Metal</p>
+            </div>
+            <div class="col-4 col-sm-2">
+              <h6>Lykkeblomst</h6>
+              <img src="img/flower.png" alt="En blomst" class="img-fluid" />
+              <p>Okseøje</p>
+            </div>
+            <div class="col-4 col-sm-2">
+              <h6>Lykkefarve</h6>
+              <img
+                src="img/farve-hvid.png"
+                alt="Farven hvid i en cirkel"
+                class="img-fluid"
+              />
+              <p>Hvid</p>
+            </div>
+            <div class="col-4 col-sm-2">
+              <h6>Lykketal</h6>
+              <img
+                src="img/position-3.png"
+                alt="Tallet tre"
+                class="img-fluid"
+              />
+              <p>Tre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="underline line mt-4"></div>
+      <div class="row mb-4">
+        <div class="col-12">
+          <div>
+            <h2>Personlighed</h2>
+            <p>
+              Personer født i abens år er kreative af natur og kommer ofte med
+              innovative ideer. Aben kan være uforudsigelig, så man ved aldrig,
+              hvad man kan forvente fra dem.
+              <br />
+              Aber er sociale personer, og bliver rastløse hvis de efterlades
+              alene i længere tid af gangen. Derfor har de brug for at sparre
+              sig med andre, især når deres kreativitet får lov til at flyde. De
+              er observante og bider mærke i selv de mindste ændringer.
+            </p>
+            <h2>Styrker</h2>
+            <p>
+              Aben er meget talentfuld og besidder et skarpt sind, som man
+              sjældent ser hos andre. De er aktive, energiske og sociale, hvor
+              de kan integrere sig i hvilken som helst gruppe uden anstrengelse.
+              <br />
+              Aben er sjov at være sammen med og er gode til at tilpasse sig,
+              når forandring sker.
+            </p>
+            <h2>Svagheder</h2>
+            <p>
+              På grund af deres skarpe intellekt og kolde facts kan aben blive
+              forvekslet som nedladende eller ufølsom. De kan være utålmodige
+              med alt, der kræver en stærk indsats.
+              <br />
+              Aben tror ofte at de kan klare sig bedre end andre, og ikke bruge
+              andres hjælp. Hvis de kan overkomme dette, vil deres personlighed
+              få lov til at skinne uden større forhindringer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-4 offset-lg-1">
@@ -419,7 +689,8 @@
             <p>
               K-Astro er en ressource for alle, som er interesseret i at lære om
               de kinesiske stjernetegn og Østasiatisk kultur. Vi tror på at
-              forståelse og åbenhed for andres kulturer, vaner og skikke styrker personlig udvikling og globaliseringen.
+              forståelse og åbenhed for andres kulturer, vaner og skikke styrker
+              personlig udvikling og globaliseringen.
             </p>
             <p><a href="om-os.html">Om os</a></p>
             <p>
@@ -435,5 +706,5 @@
       </div>
     </footer>
     <script src="script.js"></script>
-        </body>
-        </html>
+  </body>
+</html>
