@@ -1,7 +1,7 @@
 
-/* Variabler: */
+/* Variabler------------------------------------------------------------------------------  */
 :root{
-    /* colours */
+    /* Farver: */
     --black: #111111;
     --base-red: #C21807;
     --beige: #F5F0EC;
@@ -12,7 +12,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* !important brugt for at kunne overwrite bootstrap */
+    /* "!important" er brugt for at kunne overwrite bootstrap-kode */
     background-color: var(--beige) !important;
     color: var(--black) !important;
 }
@@ -21,20 +21,17 @@ img{
     display: flex;
     justify-content: center;
 }
-p{
-    font-family: "roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 65ch;
-    margin: 0 auto;
-    padding-top: 0.5em;
-    text-align: left;
-}
-/* Titel på sider */
+/* Titel på sider: */
 h1, h2, h3, h4, h5{
     text-align: center;
     margin-bottom: 0 !important;
 }
+/* Skrifttype sans serif: */
+h2, h3, h4, h5, h6, a, p, button{
+    font-family: "roboto", sans-serif;
+    font-style: normal;
+}
+/* Skrifttype kalligrafi: */
 h1{
     font-family: "splash", sans-serif;
     font-weight: 400;
@@ -43,42 +40,33 @@ h1{
     text-size-adjust: 120%;
 }
 h2{
-    font-family: "roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
     padding-top: 1em;
 }
 h3{
-    font-family: "roboto", sans-serif;
     font-weight: 300;
-    font-style: normal;
     font-size: 18px !important;
     margin: auto !important;
     margin-bottom: 1em;
     margin-top: 0.3em !important;
 }
 h4{
-    font-family: "roboto", sans-serif;
     font-weight: 200;
-    font-style: normal;
-    font-weight: 700;
-    font-style: normal;
     padding-top: 0.5em;
 }
-h5{
-    font-family: "roboto", sans-serif;
+h5, h6{
     font-weight: 200;
-    font-style: normal;
 }
-h6{
-    font-family: "roboto", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+/* Tekst: */
+p{
+    font-weight: 300;
+    max-width: 65ch;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    text-align: left;
 }
 a{
-    font-family: "roboto", sans-serif;
     font-weight: 300;
-    font-style: normal;
     font-size: 24px;
 }
 ul{
@@ -92,7 +80,6 @@ button{
     background-color: var(--base-red);
     border: 1px solid var(--beige) ;
     border-radius: 10px !important;
-    font-family: "roboto", sans-serif;
     font-weight: 300;
     font-size: 24px !important;
     padding: 0.2em 1.5em;
