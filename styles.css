@@ -97,6 +97,7 @@ button:hover{
 button a{
     text-decoration: none;
 }
+/* Select og form bruges i stjernetegnsberegneren: */
 select{
     margin: 0.5em 0 !important;
     padding: 0.2em 1.5em;
@@ -123,6 +124,7 @@ nav{
 .navbar{
     padding: 0 !important;
 }
+/* K-Astro logo og billede:  */
 .navbar-brand{
     display: flex;
 }
@@ -135,6 +137,7 @@ nav{
     text-decoration: none;
     color: var(--beige);
 }
+/* Burgermenu: */
 .navbar-toggler{
     border: var(--black) !important;
 }
@@ -232,7 +235,8 @@ nav{
   opacity: 1;
   visibility: visible;
 }
-/* Index-------------------------------------------------------------------------------------- */
+/* Index-side-------------------------------------------------------------------------------------- */
+/* Banner------------------------------------------------- */
 #lp-vid-com{
     display: none;
 }
@@ -265,12 +269,27 @@ nav{
         transform: translateY(0px);
     }
 }
+/* Anchor, der bruges til at "hoppe" op/ned på siden, fx back to top-knap eller banner-pil-------------------------------------------------  */
 .anchor{
     display:block;
     height:160px; /*højde på header*/
     margin-top:-160px; /*negative højde på header*/
     visibility:hidden;
 }
+/* Stjernetegnsberegner------------------------------------------------- */
+#answer{
+    background-color: var(--beige);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 2em 0;
+}
+#answer h2{
+    padding: 0;
+}
+#answer p{
+    margin: 0;
+}
+/* Stjernetegn på index mobil-------------------------------------------------  */
 .accordion-item{
     background-color: var(--beige) !important;
     border: none !important;
@@ -343,18 +362,6 @@ button.accordion-button {
 .nav-link.active img{
     filter: grayscale(0%);
 }
-#answer{
-    background-color: var(--beige);
-    color: var(--black);
-    border-radius: 10px;
-    padding: 2em 0;
-}
-#answer h2{
-    padding: 0;
-}
-#answer p{
-    margin: 0;
-}
 .stjernetegn{
     margin: auto;
 }
@@ -405,7 +412,8 @@ h5.ord{
 .navbar-desktop, .index-stjernetegn-desktop, .stjernetegn-desktop, .lykketing-desktop, .lykketing-1024{
     display: none;
 }
-/* historie side-------------------------------------------------------------------------------- */
+/* historie-side-------------------------------------------------------------------------------- */
+/* Indholdsfortegnelse -------------------------------------------------*/
 .indholdsfortegnelse-buttons{
     display: flex;
     flex-wrap: wrap;
@@ -415,12 +423,14 @@ h5.ord{
     margin: 0.5em !important;
     font-size: 20px !important;
 }
+/* Video------------------------------------------------- */
 .video video{
     margin-left: auto;
     margin-right: auto;
     display:flex;
     padding-bottom: 1em;
 }
+/* Historie-accordion------------------------------------------------- */
 .accordion-header-historie{
     padding: 0;
     max-width: 575px;
@@ -450,6 +460,7 @@ h5.ord{
     display: flex;
     justify-content: center;
 }
+/* Kilder------------------------------------------------- */
 .kilder a, .om-os a{
     font-size: 16px;
     color: var(--base-red) !important;
