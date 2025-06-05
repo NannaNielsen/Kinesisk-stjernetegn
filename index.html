@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="da">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-Astro</title>
 
     <!-- Favicon: -->
-    <link rel="icon" type="image" href="img/logo.png" />
+    <link rel="icon" type="image/png" href="img/logo.png">
 
     <!-- Meta beskrivelse: -->
     <meta
       name="description"
       content="K-Astro er en ressource til at lære og forstå de kinesiske stjernetegn. Find dit og andres kinesiske stjernetegn og lær om historien bag dem."
-    />
+    >
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Skrifttyper -->
-    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jaa5qns.css">
 
     <!-- Bootstrap, Popper og JS -->
     <link
@@ -27,7 +27,7 @@
       rel="stylesheet"
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
-    />
+    >
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -50,10 +50,10 @@
             width="50"
             height="50"
             class="d-inline-block align-text-top"
-          />
+          >
           <h1>K-Astro</h1>
         </a>
-        <a
+        <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -63,7 +63,7 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </a>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -140,10 +140,10 @@
     <!-- Banner: -->
     <div class="banner text-center">
       <video id="lp-vid-phone" class="img-fluid" autoplay loop muted>
-        <source src="img/landingpage-vid-phone.mp4" />
+        <source src="img/landingpage-vid-phone.mp4">
       </video>
       <video id="lp-vid-com" class="img-fluid" autoplay loop muted>
-        <source src="img/landingpage-vid.mp4" />
+        <source src="img/landingpage-vid.mp4">
       </video>
       <!-- Scroll down-pil -->
       <div class="bounce">
@@ -230,7 +230,7 @@
               <div class="accordion-item">
                 <p class="accordion-header">
                   <button
-                    class="accordion-button collapsed rotten-open"
+                    class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne"
@@ -242,27 +242,27 @@
                 </p>
                 <div
                   id="flush-collapseOne"
-                  class="accordion-collapse collapse show"
+                  class="accordion-collapse collapse"
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12">
-                          <img src="img/Mus.png" alt="" class="img-fluid">
+                          <img src="img/Mus.png" alt="Blæk illustration af det kinesiske stjernetegn rotten" class="img-fluid">
                         </div>
                         <div class="col-12">
                           <h1 class="text-center">Rotten</h1>
                           <h5 class="ord">Kløgtig • Ambitiøs • Charmør</h5>
                           <p>Rotten er det første kinesiske stjernetegn.</p>
                           <p>
-                            Personer født i rottens år er humørfyldte, sociale
+                            Personer født i rottens år er humoristiske, sociale
                             og stædige personer, som trives ved at være en del
                             af en gruppe. Dette stjernetegn værdsætter tryghed i
                             forskellige aspekter af deres liv, hvilket påvirker
                             deres valg af karriere og kærlighed.
                           </p>
-                          <button><a href="rotten.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/rotten.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -291,6 +291,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
+                          <img src="img/Ko.png" alt="Blæk illustration af det kinesiske stjernetegn oksen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Oksen</h1>
@@ -302,7 +303,7 @@
                             men kan også virke stædige og temperamentsfulde,
                             især hvis deres grænser overskrides.
                           </p>
-                          <button><a href="oksen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/oksen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -331,7 +332,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Tiger.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren" class="img-fluid" />
+                          <img src="img/Tiger.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Tigeren</h1>
@@ -344,7 +345,7 @@
                             ambitioner og er ærlige og direkte i deres
                             kommunikation.
                           </p>
-                          <button><a href="tigeren.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/tigeren.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -373,7 +374,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Kanin.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen" class="img-fluid" />
+                          <img src="img/Kanin.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Kaninen</h1>
@@ -384,7 +385,7 @@
                             balance, hvoraf de søger fred og så vidt muligt undgår konflikt. De er venlige, intelligente og
                             tilpasningsdygtige, men også følsomme og forsigtige.
                           </p>
-                          <button><a href="kaninen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/kaninen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -413,7 +414,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Drage.png" alt="Blæk illustration af det kinesiske stjernetegn dragen" class="img-fluid" />
+                          <img src="img/Drage.png" alt="Blæk illustration af det kinesiske stjernetegn dragen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Dragen</h1>
@@ -428,7 +429,7 @@
                             værdsætter ærlighed højt, men kan virke dominerende
                             og impulsive.
                           </p>
-                          <button><a href="dragen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/dragen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -457,7 +458,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Slange.png" alt="Blæk illustration af det kinesiske stjernetegn slangen" class="img-fluid" />
+                          <img src="img/Slange.png" alt="Blæk illustration af det kinesiske stjernetegn slangen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Slangen</h1>
@@ -471,7 +472,7 @@
                             men har behov for alenetid og kan virke
                             følelsesmæssigt distancerede.
                           </p>
-                          <button><a href="slangen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/slangen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -500,7 +501,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Hest.png" alt="Blæk illustration af det kinesiske stjernetegn hesten" class="img-fluid" />
+                          <img src="img/Hest.png" alt="Blæk illustration af det kinesiske stjernetegn hesten" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Hesten</h1>
@@ -515,7 +516,7 @@
                             omsorgsfulde, men kan være utålmodige og have svært
                             ved at fastholde interessen, når motivationen daler.
                           </p>
-                          <button><a href="hesten.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/hesten.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -544,7 +545,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Ged.png" alt="Blæk illustration af det kinesiske stjernetegn geden" class="img-fluid" />
+                          <img src="img/Ged.png" alt="Blæk illustration af det kinesiske stjernetegn geden" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Geden</h1>
@@ -557,7 +558,7 @@
                             kan blive hårdt såret af andres handlinger eller
                             deres egen fiasko.
                           </p>
-                          <button><a href="geden.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/geden.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -586,7 +587,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Abe.png" alt="Blæk illustration af det kinesiske stjernetegn aben" class="img-fluid" />
+                          <img src="img/Abe.png" alt="Blæk illustration af det kinesiske stjernetegn aben" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Aben</h1>
@@ -598,7 +599,7 @@
                             forandringer eller nye grupper mennesker, men kan
                             være i overbevisning om at de ikke har brug for andre.
                           </p>
-                          <button><a href="aben.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/aben.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -627,7 +628,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Hane.png" alt="Blæk illustration af det kinesiske stjernetegn" class="img-fluid" />
+                          <img src="img/Hane.png" alt="Blæk illustration af det kinesiske stjernetegn" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Hanen</h1>
@@ -640,7 +641,7 @@
                             retfærdighedssans gør dem til beslutsomme individer, men hvis deres ambitioner ikke realiseres,
                             kan de fremstå som arrogante eller skuffede.
                           </p>
-                          <button><a href="hanen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/hanen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -669,7 +670,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Hund.png" alt="Blæk illustration af det kinesiske stjernetegn hunden" class="img-fluid" />
+                          <img src="img/Hund.png" alt="Blæk illustration af det kinesiske stjernetegn hunden" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Hunden</h1>
@@ -683,7 +684,7 @@
                             impulsivitet og manglende tålmodighed, især når
                             relationer er i ubalance.
                           </p>
-                          <button><a href="hunden.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/hunden.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -712,7 +713,7 @@
                     <div class="container text-center">
                       <div class="row">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Gris.png" alt="Blæk illustration af det kinesiske stjernetegn grisen" class="img-fluid" />
+                          <img src="img/Gris.png" alt="Blæk illustration af det kinesiske stjernetegn grisen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1>Grisen</h1>
@@ -727,7 +728,7 @@
                             tilbøjelige til at trække sig tilbage, hvis de føler
                             sig såret.
                           </p>
-                          <button><a href="grisen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/grisen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -752,7 +753,7 @@
                       aria-controls="pills-rotten"
                       aria-selected="true"
                     >
-                      <img src="img/Mus-outline.png" alt="Blæk illustration af det kinesiske stjernetegn rotten" />
+                      <img src="img/Mus-outline.png" alt="Blæk illustration af det kinesiske stjernetegn rotten">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -766,7 +767,7 @@
                       aria-controls="pills-oksen"
                       aria-selected="false"
                     >
-                      <img src="img/Ko-outline.png" alt="Blæk illustration af det kinesiske stjernetegn oksen" />
+                      <img src="img/Ko-outline.png" alt="Blæk illustration af det kinesiske stjernetegn oksen">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -780,7 +781,7 @@
                       aria-controls="pills-tigeren"
                       aria-selected="false"
                     >
-                      <img src="img/Tiger-outline.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren" />
+                      <img src="img/Tiger-outline.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -794,7 +795,7 @@
                       aria-controls="pills-kaninen"
                       aria-selected="false"
                     >
-                      <img src="img/Kanin-outline.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen" />
+                      <img src="img/Kanin-outline.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -808,7 +809,7 @@
                       aria-controls="pills-dragen"
                       aria-selected="false"
                     >
-                      <img src="img/Drage-outline.png" alt="Blæk illustration af det kinesiske stjernetegn dragen" />
+                      <img src="img/Drage-outline.png" alt="Blæk illustration af det kinesiske stjernetegn dragen">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -822,7 +823,7 @@
                       aria-controls="pills-slangen"
                       aria-selected="false"
                     >
-                      <img src="img/Slange-outline.png" alt="Blæk illustration af det kinesiske stjernetegn slangen" />
+                      <img src="img/Slange-outline.png" alt="Blæk illustration af det kinesiske stjernetegn slangen">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -836,7 +837,7 @@
                       aria-controls="pills-hesten"
                       aria-selected="false"
                     >
-                      <img src="img/Hest-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hesten" />
+                      <img src="img/Hest-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hesten">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -850,7 +851,7 @@
                       aria-controls="pills-geden"
                       aria-selected="false"
                     >
-                      <img src="img/Ged-outline.png" alt="Blæk illustration af det kinesiske stjernetegn geden" />
+                      <img src="img/Ged-outline.png" alt="Blæk illustration af det kinesiske stjernetegn geden">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -864,7 +865,7 @@
                       aria-controls="pills-aben"
                       aria-selected="false"
                     >
-                      <img src="img/Abe-outline.png" alt="Blæk illustration af det kinesiske stjernetegn aben" />
+                      <img src="img/Abe-outline.png" alt="Blæk illustration af det kinesiske stjernetegn aben">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -878,7 +879,7 @@
                       aria-controls="pills-hanen"
                       aria-selected="false"
                     >
-                      <img src="img/Hane-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hanen" />
+                      <img src="img/Hane-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hanen">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -892,7 +893,7 @@
                       aria-controls="pills-hunden"
                       aria-selected="false"
                     >
-                      <img src="img/Hund-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hunden" />
+                      <img src="img/Hund-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hunden">
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -906,7 +907,7 @@
                       aria-controls="pills-grisen"
                       aria-selected="false"
                     >
-                      <img src="img/Gris-outline.png" alt="Blæk illustration af det kinesiske stjernetegn grisen" />
+                      <img src="img/Gris-outline.png" alt="Blæk illustration af det kinesiske stjernetegn grisen">
                     </button>
                   </li>
                 </ul>
@@ -923,7 +924,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Mus.png" alt="Blæk illustration af det kinesiske stjernetegn rotten" class="img-fluid" />
+                          <img src="img/Mus.png" alt="Blæk illustration af det kinesiske stjernetegn rotten" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Rotten</h1>
@@ -936,7 +937,7 @@
                             forskellige aspekter af deres liv, hvilket påvirker
                             deres valg af karriere og kærlighed.
                           </p>
-                          <button><a href="rotten.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/rotten.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -951,7 +952,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Ko.png" alt="Blæk illustration af det kinesiske stjernetegn oksen" class="img-fluid" />
+                          <img src="img/Ko.png" alt="Blæk illustration af det kinesiske stjernetegn oksen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Oksen</h1>
@@ -963,7 +964,7 @@
                             men kan også virke stædige og temperamentsfulde,
                             især hvis deres grænser overskrides.
                           </p>
-                          <button><a href="oksen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/oksen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -978,7 +979,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Tiger.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren" class="img-fluid" />
+                          <img src="img/Tiger.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Tigeren</h1>
@@ -991,7 +992,7 @@
                             ambitioner og er ærlige og direkte i deres
                             kommunikation.
                           </p>
-                          <button><a href="tigeren.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/tigeren.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1006,7 +1007,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Kanin.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen" class="img-fluid" />
+                          <img src="img/Kanin.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Kaninen</h1>
@@ -1017,7 +1018,7 @@
                             balance, hvoraf de søger fred og så vidt muligt undgår konflikt. De er venlige, intelligente og
                             tilpasningsdygtige, men også følsomme og forsigtige.
                           </p>
-                          <button><a href="kaninen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/kaninen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1032,7 +1033,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Drage.png" alt="Blæk illustration af det kinesiske stjernetegn dragen" class="img-fluid" />
+                          <img src="img/Drage.png" alt="Blæk illustration af det kinesiske stjernetegn dragen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Dragen</h1>
@@ -1047,7 +1048,7 @@
                             værdsætter ærlighed højt, men kan virke dominerende
                             og impulsive.
                           </p>
-                          <button><a href="dragen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/dragen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1062,7 +1063,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Slange.png" alt="Blæk illustration af det kinesiske stjernetegn slangen" class="img-fluid" />
+                          <img src="img/Slange.png" alt="Blæk illustration af det kinesiske stjernetegn slangen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Slangen</h1>
@@ -1076,7 +1077,7 @@
                             men har behov for alenetid og kan virke
                             følelsesmæssigt distancerede.
                           </p>
-                          <button><a href="slangen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/slangen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1091,7 +1092,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Hest.png" alt="Blæk illustration af det kinesiske stjernetegn hesten" class="img-fluid" />
+                          <img src="img/Hest.png" alt="Blæk illustration af det kinesiske stjernetegn hesten" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Hesten</h1>
@@ -1106,7 +1107,7 @@
                             omsorgsfulde, men kan være utålmodige og have svært
                             ved at fastholde interessen, når motivationen daler.
                           </p>
-                          <button><a href="hesten.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/hesten.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1121,7 +1122,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Ged.png" alt="Blæk illustration af det kinesiske stjernetegn geden" class="img-fluid" />
+                          <img src="img/Ged.png" alt="Blæk illustration af det kinesiske stjernetegn geden" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Geden</h1>
@@ -1134,7 +1135,7 @@
                             kan blive hårdt såret af andres handlinger eller
                             deres egen fiasko.
                           </p>
-                          <button><a href="geden.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/geden.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1149,7 +1150,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Abe.png" alt="Blæk illustration af det kinesiske stjernetegn aben" class="img-fluid" />
+                          <img src="img/Abe.png" alt="Blæk illustration af det kinesiske stjernetegn aben" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Aben</h1>
@@ -1161,7 +1162,7 @@
                             forandringer eller nye grupper mennesker, men kan
                             være i overbevisning om at de ikke har brug for andre.
                           </p>
-                          <button><a href="aben.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/aben.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1176,7 +1177,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Hane.png" alt="Blæk illustration af det kinesiske stjernetegn hanen" class="img-fluid" />
+                          <img src="img/Hane.png" alt="Blæk illustration af det kinesiske stjernetegn hanen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Hanen</h1>
@@ -1189,7 +1190,7 @@
                             retfærdighedssans gør dem til beslutsomme individer, men hvis deres ambitioner ikke realiseres,
                             kan de fremstå som arrogante eller skuffede.
                           </p>
-                          <button><a href="hanen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/hanen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1204,7 +1205,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Hund.png" alt="Blæk illustration af det kinesiske stjernetegn hunden" class="img-fluid" />
+                          <img src="img/Hund.png" alt="Blæk illustration af det kinesiske stjernetegn hunden" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1 class="text-center">Hunden</h1>
@@ -1218,7 +1219,7 @@
                             impulsivitet og manglende tålmodighed, især når
                             relationer er i ubalance.
                           </p>
-                          <button><a href="hunden.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/hunden.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1233,7 +1234,7 @@
                     <div class="container text-center">
                       <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                          <img src="img/Gris.png" alt="Blæk illustration af det kinesiske stjernetegn grisen" class="img-fluid" />
+                          <img src="img/Gris.png" alt="Blæk illustration af det kinesiske stjernetegn grisen" class="img-fluid">
                         </div>
                         <div class="col-12 col-lg-6">
                           <h1>Grisen</h1>
@@ -1248,7 +1249,7 @@
                             tilbøjelige til at trække sig tilbage, hvis de føler
                             sig såret.
                           </p>
-                          <button><a href="grisen.html">Læs mere</a></button>
+                          <button onclick="window.location.href='/grisen.html'">Læs mere</button>
                         </div>
                       </div>
                     </div>
@@ -1271,10 +1272,10 @@
               stjernetegn? Læs denne og meget mere om historien bag de kinesiske
               stjernetegn her.
             </p>
-            <button><a href="historie.html">Læs mere</a></button>
+            <button onclick="window.location.href='/historie.html'">Læs mere</button>
           </div>
           <div class="col-sm-12 col-lg-6">
-            <img src="img/ræs.png" alt="Blæk illustration af det det store ræs med jadekejseren og de kinesiske stjernetegn rotten, katten, oksen, tigeren, kaninen, dragen, slangen, hesten, geden, aben, hanen, hunden og grisen" class="img-fluid" />
+            <img src="img/ræs.png" alt="Blæk illustration af det det store ræs med jadekejseren og de kinesiske stjernetegn rotten, katten, oksen, tigeren, kaninen, dragen, slangen, hesten, geden, aben, hanen, hunden og grisen" class="img-fluid" >
           </div>
         </div>
       </div>
@@ -1283,7 +1284,7 @@
       <!-- Årets tegn -->
       <div class="row align-items-center">
         <div class="col-sm-12 col-lg-6">
-          <img src="img/year-of-the-snake.png" alt="Rød blæk illustration af det kinesiske stjernetegn slangen, der snor sig om tallet 2025" class="img-fluid" />
+          <img src="img/year-of-the-snake.png" alt="Rød blæk illustration af det kinesiske stjernetegn slangen, der snor sig om tallet 2025" class="img-fluid">
         </div>
         <div class="col-sm-12 col-lg-6">
           <h2>Slangens år</h2>
@@ -1298,7 +1299,7 @@
             transformere sig og slippe af med gamle vaner. Tag dig tid til at
             reflektere over dine mål og genfind dig selv.
           </p>
-          <button><a href="slangen.html">Læs mere om slangen</a></button>
+          <button onclick="window.location.href='/slangen.html'">Læs mere</button>
         </div>
       </div>
     </div>
@@ -1344,10 +1345,10 @@
             <img
               src="img/logo.png"
               alt="K-Astro logo"
-              height="150px"
-              width="150px"
+              height="150"
+              width="150"
               class="img-fluid"
-            />
+            >
           </div>
           <div class="col-12 col-lg-5">
             <h5>Om K-Astro</h5>
