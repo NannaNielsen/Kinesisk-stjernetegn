@@ -6,7 +6,7 @@
     <title>K-Astro</title>
 
     <!-- Favicon: -->
-    <link rel="icon" type="image" href="img/logo.png" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
 
     <!-- Meta beskrivelse: -->
     <meta
@@ -53,7 +53,7 @@
           />
           <h1>K-Astro</h1>
         </a>
-        <a
+        <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -63,7 +63,7 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </a>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -179,183 +179,197 @@
               role="tablist"
             >
               <li class="nav-item" role="presentation">
-                <a href="rotten.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-rotten-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-rotten"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-rotten"
-                    aria-selected="true"
-                  >
-                    <img src="img/Mus-outline.png" alt="Blæk illustration af det kinesiske stjernetegn rotten" /></button
-                ></a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="oksen.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-oksen-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-oksen"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-oksen"
-                    aria-selected="false"
-                  >
-                    <img src="img/Ko-outline.png" alt="Blæk illustration af det kinesiske stjernetegn oksen" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/rotten.html'"
+                  class="nav-link"
+                  id="pills-rotten-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-rotten"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Mus-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn rotten"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link aktiv"
+                  onclick="window.location.href='/oksen.html'"
+                  class="nav-link"
+                  id="pills-oksen-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-oksen"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Ko-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn oksen"
+                  />
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  onclick="window.location.href='/tigeren.html'"
+                  class="nav-link"
                   id="pills-tigeren-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-tigeren"
                   type="button"
                   role="tab"
-                  aria-controls="pills-tigeren"
-                  aria-selected="false"
                 >
-                  <img src="img/Tiger-outline.png" alt="Blæk illustration af det kinesiske stjernetegn tigeren" />
+                  <img
+                    src="img/Tiger-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn tigeren"
+                  />
                 </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="kaninen.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-kaninen-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-kaninen"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-kaninen"
-                    aria-selected="false"
-                  >
-                    <img src="img/Kanin-outline.png" alt="Blæk illustration af det kinesiske stjernetegn kaninen" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/kaninen.html'"
+                  class="nav-link"
+                  id="pills-kaninen-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-kaninen"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Kanin-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn kaninen"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="dragen.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-dragen-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-dragen"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-dragen"
-                    aria-selected="false"
-                  >
-                    <img src="img/Drage-outline.png" alt="Blæk illustration af det kinesiske stjernetegn dragen" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/dragen.html'"
+                  class="nav-link"
+                  id="pills-dragen-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-dragen"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Drage-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn dragen"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="slangen.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-slangen-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-slangen"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-slangen"
-                    aria-selected="false"
-                  >
-                    <img src="img/Slange-outline.png" alt="Blæk illustration af det kinesiske stjernetegn slangen" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/slangen.html'"
+                  class="nav-link"
+                  id="pills-slangen-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-slangen"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Slange-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn slangen"
+                  />
+                </button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button
+                  onclick="window.location.href='/hesten.html'"
+                  class="nav-link"
+                  id="pills-hesten-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-hesten"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Hest-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn hesten"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="hesten.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-hesten-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-hesten"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-hesten"
-                    aria-selected="false"
-                  >
-                    <img src="img/Hest-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hesten" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/geden.html'"
+                  class="nav-link"
+                  id="pills-geden-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-geden"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Ged-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn geden"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="geden.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-geden-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-geden"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-geden"
-                    aria-selected="false"
-                  >
-                    <img src="img/Ged-outline.png" alt="Blæk illustration af det kinesiske stjernetegn geden" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/aben.html'"
+                  class="nav-link aktiv"
+                  id="pills-aben-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-aben"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Abe-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn aben"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="aben.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-aben-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-aben"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-aben"
-                    aria-selected="false"
-                  >
-                    <img src="img/Abe-outline.png" alt="Blæk illustration af det kinesiske stjernetegn aben" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/hanen.html'"
+                  class="nav-link"
+                  id="pills-hanen-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-hanen"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Hane-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn hanen"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="hanen.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-hanen-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-hanen"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-hanen"
-                    aria-selected="false"
-                  >
-                    <img src="img/Hane-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hanen" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/hunden.html'"
+                  class="nav-link"
+                  id="pills-hunden-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-hunden"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Hund-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn hunden"
+                  />
+                </button>
               </li>
               <li class="nav-item" role="presentation">
-                <a href="hunden.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-hunden-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-hunden"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-hunden"
-                    aria-selected="false"
-                  >
-                    <img src="img/Hund-outline.png" alt="Blæk illustration af det kinesiske stjernetegn hunden" /></button
-                ></a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a href="grisen.html"
-                  ><button
-                    class="nav-link"
-                    id="pills-grisen-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-grisen"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-grisen"
-                    aria-selected="false"
-                  >
-                    <img src="img/Gris-outline.png" alt="Blæk illustration af det kinesiske stjernetegn grisen" /></button
-                ></a>
+                <button
+                  onclick="window.location.href='/grisen.html'"
+                  class="nav-link"
+                  id="pills-grisen-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-grisen"
+                  type="button"
+                  role="tab"
+                >
+                  <img
+                    src="img/Gris-outline.png"
+                    alt="Blæk illustration af det kinesiske stjernetegn grisen"
+                  />
+                </button>
               </li>
             </ul>
             <div class="underline line"></div>
@@ -569,8 +583,8 @@
             <img
               src="img/logo.png"
               alt="K-Astro logo"
-              height="150px"
-              width="150px"
+              height="150"
+              width="150"
               class="img-fluid"
             />
           </div>
