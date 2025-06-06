@@ -289,7 +289,8 @@ function scriptButton() {
     }
 
     // Viser resultatet i #answer-elementet:
-    document.getElementById("answer").innerHTML = resultHTML;
+    document.getElementById("answer").innerHTML = resultHTML; // Viser resultatet fra funktionen
+    document.getElementById("answer").style.display = "block"; // Viser "#answer" da den er hidden by default
 
     // Gør reset-knappen synlig:
     document.getElementById("reset-button").style.display='inline';
@@ -297,5 +298,6 @@ function scriptButton() {
 // Funktion "resetSign()" der rydder resultatet og gør "nulstil"-knappen usynlig:
 function resetSign() {
     document.getElementById("answer").innerHTML = "";
+    document.getElementById("answer").style.display = "none"; // Skjuler "#answer" igen når beregneren resettes
     document.getElementById("reset-button").style.display='none';
 }
