@@ -293,6 +293,9 @@ nav{
 #answer p{
     margin: 0;
 }
+#find-stjernetegn{
+    font-size: 20px !important;
+}
 /* Stjernetegn på index mobil-------------------------------------------------  */
 .accordion-item{
     background-color: var(--beige) !important;
@@ -428,7 +431,7 @@ h5.ord{
     font-size: 20px !important;
 }
 /* Video------------------------------------------------- */
-.video video{
+video{
     margin-left: auto;
     margin-right: auto;
     display:flex;
