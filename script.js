@@ -267,7 +267,7 @@ function scriptButton() {
     let birthdaySign = "";
     let birthdayImage = "";
 
-    // For-lykke, der går igennem arrayet "signs" og finder det første matchende element, hvor fødselsdagen er efter tærsklen. Herefter finder den stjernetegnet og billedet:
+    // For-løkke, der går igennem arrayet "signs" og finder det første matchende element, hvor fødselsdagen er efter tærsklen. Herefter finder den stjernetegnet og billedet:
     for (let i = 0; i < signs.length; i++) {
         if (birthday >= signs[i][0]) {
             birthdaySign = signs[i][1];
