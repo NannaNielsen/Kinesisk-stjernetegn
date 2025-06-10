@@ -261,7 +261,7 @@ function scriptButton() {
         ["19010219", "oksen"],
         ["19000131", "rotten"],
         ["19000000", "grisen"],
-    ];
+    ];  
 
     // Definerer variabler, til at opbevare resultatet fra stjernetegnet og billedet:
     let birthdaySign = "";
